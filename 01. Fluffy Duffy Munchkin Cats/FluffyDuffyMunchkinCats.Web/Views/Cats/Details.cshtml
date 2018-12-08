@@ -1,0 +1,14 @@
+﻿@model CatServiceModel
+
+@{
+    ViewData["Title"] = $"Details for {Model.Name}";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h2>@Model.Name</h2>
+    <img src="@Model.ImageUrl" class="img-responsive" />
+    <h4>Age: @Model.Age</h4>
+    <h4>Breed: @Model.Breed</h4>
+</div>
