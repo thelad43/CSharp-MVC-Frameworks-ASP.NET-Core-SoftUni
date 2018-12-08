@@ -1,0 +1,13 @@
+﻿namespace Chushka.Web.Areas.Admin.Controllers
+{
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Mvc;
+
+    using static Chushka.Common.WebConstants;
+
+    [Area(AdminArea)]
+    [Authorize(Roles = AdministratorRole)]
+    public abstract class BaseAdminController : Controller
+    {
+    }
+}
