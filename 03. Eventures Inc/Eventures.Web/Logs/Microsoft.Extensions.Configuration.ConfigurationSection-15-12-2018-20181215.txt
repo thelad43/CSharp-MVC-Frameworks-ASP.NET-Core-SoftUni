@@ -1615,3 +1615,494 @@ WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
 2018-12-15T15:08:52.4366645+02:00 0HLJ2HOUQKQGI:0000002B [INF] Executed action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" in 34.6583ms (afa2e885)
 2018-12-15T15:08:52.4397835+02:00 0HLJ2HOUQKQGI:0000002B [INF] Executed endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (99874f2b)
 2018-12-15T15:08:52.4431403+02:00 0HLJ2HOUQKQGI:0000002B [INF] Request finished in 48.1267ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:32:54.5530974+02:00  [WRN] No type was specified for the decimal column '"TicketPrice"' on entity type '"Event"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2018-12-15T17:32:54.7971209+02:00  [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T17:32:55.9845309+02:00  [INF] Executed DbCommand ("267"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2018-12-15T17:32:56.0036767+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2018-12-15T17:32:56.0698072+02:00  [INF] Executed DbCommand ("61"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-12-15T17:32:56.0782137+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-12-15T17:32:56.6438600+02:00  [INF] Executed DbCommand ("237"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T17:32:56.7500042+02:00  [INF] Executed DbCommand ("53"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T17:32:56.8968406+02:00  [INF] Executed DbCommand ("90"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)" (0723d8ff)
+2018-12-15T17:33:00.9013795+02:00 0HLJ2KABM784R:00000001 [INF] Request starting HTTP/1.1 GET https://localhost:5001/   (ca22a1cb)
+2018-12-15T17:33:01.2013868+02:00 0HLJ2KABM784R:00000001 [INF] Executing endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T17:33:01.2418300+02:00 0HLJ2KABM784R:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\", page = \"\"}". Executing action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T17:33:01.5316779+02:00 0HLJ2KABM784R:00000001 [INF] Executing action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T17:33:01.5381518+02:00 0HLJ2KABM784R:00000001 [INF] Executed action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.6889ms. (50a9e262)
+2018-12-15T17:33:01.5994052+02:00 0HLJ2KABM784R:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T17:33:01.9260172+02:00 0HLJ2KABM784R:00000001 [INF] Executed ViewResult - view "Index" executed in 358.2839ms. (f66409e9)
+2018-12-15T17:33:01.9289205+02:00 0HLJ2KABM784R:00000001 [INF] Executed action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" in 684.4585ms (afa2e885)
+2018-12-15T17:33:01.9318483+02:00 0HLJ2KABM784R:00000001 [INF] Executed endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T17:33:01.9461518+02:00 0HLJ2KABM784R:00000001 [INF] Request finished in 1046.4035ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:33:02.0259842+02:00 0HLJ2KABM784R:00000002 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css   (ca22a1cb)
+2018-12-15T17:33:02.0356273+02:00 0HLJ2KABM784Q:00000001 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-12-15T17:33:02.0411980+02:00 0HLJ2KABM784S:00000001 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=qJ6sF6fAQn4m-8y39hiFs0CzFE8ldTJ8vZrFRoBAU5U   (ca22a1cb)
+2018-12-15T17:33:02.0505144+02:00 0HLJ2KABM784S:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\js\site.js"' (27b0a520)
+2018-12-15T17:33:02.0537251+02:00 0HLJ2KABM784R:00000002 [INF] Connection id ""0HLJ2KABM784R"", Request id ""0HLJ2KABM784R:00000002"": the application aborted the connection. (9f49aef1)
+2018-12-15T17:33:02.0585939+02:00 0HLJ2KABM784S:00000001 [INF] Request finished in 15.9912ms 200 application/javascript (791a596a)
+2018-12-15T17:33:02.0617255+02:00 0HLJ2KABM784R:00000002 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\css\site.css"' (27b0a520)
+2018-12-15T17:33:02.0659855+02:00 0HLJ2KABM784R:00000002 [INF] Request finished in 41.9239ms 0 text/css (791a596a)
+2018-12-15T17:33:02.1038319+02:00 0HLJ2KABM784Q:00000001 [INF] Connection id ""0HLJ2KABM784Q"", Request id ""0HLJ2KABM784Q:00000001"": the application aborted the connection. (9f49aef1)
+2018-12-15T17:33:02.1086217+02:00 0HLJ2KABM784Q:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-12-15T17:33:02.1173087+02:00 0HLJ2KABM784Q:00000001 [INF] Request finished in 95.2386ms 200 text/css (791a596a)
+2018-12-15T17:33:02.2332995+02:00 0HLJ2KABM784S:00000002 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico   (ca22a1cb)
+2018-12-15T17:33:02.2381674+02:00 0HLJ2KABM784S:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\favicon.ico"' (27b0a520)
+2018-12-15T17:33:02.2431851+02:00 0HLJ2KABM784S:00000002 [INF] Request finished in 7.7214ms 200 image/x-icon (791a596a)
+2018-12-15T17:33:25.3568162+02:00 0HLJ2KABM784S:00000003 [INF] Request starting HTTP/1.1 GET https://localhost:5001/identity/account/register   (ca22a1cb)
+2018-12-15T17:33:25.3639518+02:00 0HLJ2KABM784S:00000003 [INF] Executing endpoint '"Page: /Account/Register"' (500cc934)
+2018-12-15T17:33:25.5444546+02:00 0HLJ2KABM784S:00000003 [INF] Route matched with "{page = \"/Account/Register\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Register" (547e620f)
+2018-12-15T17:33:25.5743354+02:00 0HLJ2KABM784S:00000003 [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.RegisterModel.OnGet" with arguments ([""]) - ModelState is Valid (d4ff7456)
+2018-12-15T17:33:25.5769989+02:00 0HLJ2KABM784S:00000003 [INF] Executed handler method "OnGet", returned result "". (90fdc39c)
+2018-12-15T17:33:25.5825449+02:00 0HLJ2KABM784S:00000003 [INF] Executing an implicit handler method - ModelState is Valid (232a55d1)
+2018-12-15T17:33:25.5855805+02:00 0HLJ2KABM784S:00000003 [INF] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult". (f857da66)
+2018-12-15T17:33:25.6885062+02:00 0HLJ2KABM784S:00000003 [INF] Executed page "/Account/Register" in 141.217ms (02e01280)
+2018-12-15T17:33:25.6913744+02:00 0HLJ2KABM784S:00000003 [INF] Executed endpoint '"Page: /Account/Register"' (99874f2b)
+2018-12-15T17:33:25.6944657+02:00 0HLJ2KABM784S:00000003 [INF] Request finished in 338.0346ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:33:54.6059755+02:00 0HLJ2KABM784S:00000004 [INF] Request starting HTTP/1.1 POST https://localhost:5001/identity/account/register application/x-www-form-urlencoded 372 (ca22a1cb)
+2018-12-15T17:33:54.6148423+02:00 0HLJ2KABM784S:00000004 [INF] Executing endpoint '"Page: /Account/Register"' (500cc934)
+2018-12-15T17:33:54.6179032+02:00 0HLJ2KABM784S:00000004 [INF] Route matched with "{page = \"/Account/Register\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Register" (547e620f)
+2018-12-15T17:33:54.7474873+02:00 0HLJ2KABM784S:00000004 [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.RegisterModel.OnPostAsync" with arguments ([""]) - ModelState is Valid (d4ff7456)
+2018-12-15T17:33:54.8658232+02:00 0HLJ2KABM784S:00000004 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T17:33:54.9580211+02:00 0HLJ2KABM784S:00000004 [INF] Executed DbCommand ("68"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2018-12-15T17:33:55.1380466+02:00 0HLJ2KABM784S:00000004 [INF] Executed DbCommand ("62"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Discriminator], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName], [FirstName], [LastName], [UniqueCitizenNumber])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);" (0723d8ff)
+2018-12-15T17:33:55.1594685+02:00 0HLJ2KABM784S:00000004 [INF] User created a new account with password. (693a7015)
+2018-12-15T17:33:55.3633323+02:00 0HLJ2KABM784S:00000004 [INF] Executed DbCommand ("67"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-12-15T17:33:55.4823648+02:00 0HLJ2KABM784S:00000004 [INF] Executed DbCommand ("38"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-12-15T17:33:55.4992145+02:00 0HLJ2KABM784S:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-12-15T17:33:55.5548965+02:00 0HLJ2KABM784S:00000004 [INF] Executed DbCommand ("43"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T17:33:55.6047852+02:00 0HLJ2KABM784S:00000004 [INF] Executed DbCommand ("32"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-12-15T17:33:55.6549762+02:00 0HLJ2KABM784S:00000004 [INF] Executed DbCommand ("42"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T17:33:55.6966900+02:00 0HLJ2KABM784S:00000004 [INF] Executed DbCommand ("25"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2018-12-15T17:33:55.7315110+02:00 0HLJ2KABM784S:00000004 [INF] Executed DbCommand ("21"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);" (0723d8ff)
+2018-12-15T17:33:55.7779145+02:00 0HLJ2KABM784S:00000004 [INF] Executed DbCommand ("41"ms) [Parameters=["@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13, [FirstName] = @p14, [LastName] = @p15, [UniqueCitizenNumber] = @p16
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-12-15T17:33:55.7882114+02:00 0HLJ2KABM784S:00000004 [INF] Executed handler method "OnPostAsync", returned result "Microsoft.AspNetCore.Mvc.LocalRedirectResult". (90fdc39c)
+2018-12-15T17:33:55.7975684+02:00 0HLJ2KABM784S:00000004 [INF] Executing LocalRedirectResult, redirecting to "/". (cac120e6)
+2018-12-15T17:33:55.8023660+02:00 0HLJ2KABM784S:00000004 [INF] Executed page "/Account/Register" in 1182.2793ms (02e01280)
+2018-12-15T17:33:55.8056660+02:00 0HLJ2KABM784S:00000004 [INF] Executed endpoint '"Page: /Account/Register"' (99874f2b)
+2018-12-15T17:33:55.8116003+02:00 0HLJ2KABM784S:00000004 [INF] Request finished in 1206.3299ms 302  (791a596a)
+2018-12-15T17:33:55.8678515+02:00 0HLJ2KABM784S:00000005 [INF] Request starting HTTP/1.1 GET https://localhost:5001/   (ca22a1cb)
+2018-12-15T17:33:55.8783850+02:00 0HLJ2KABM784S:00000005 [INF] Executing endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T17:33:55.8806594+02:00 0HLJ2KABM784S:00000005 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\", page = \"\"}". Executing action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T17:33:55.9045791+02:00 0HLJ2KABM784S:00000005 [INF] Executing action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T17:33:55.9079383+02:00 0HLJ2KABM784S:00000005 [INF] Executed action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.2172ms. (50a9e262)
+2018-12-15T17:33:55.9110601+02:00 0HLJ2KABM784S:00000005 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T17:33:55.9202216+02:00 0HLJ2KABM784S:00000005 [INF] Executed ViewResult - view "Index" executed in 9.0014ms. (f66409e9)
+2018-12-15T17:33:55.9231874+02:00 0HLJ2KABM784S:00000005 [INF] Executed action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" in 39.6625ms (afa2e885)
+2018-12-15T17:33:55.9256684+02:00 0HLJ2KABM784S:00000005 [INF] Executed endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T17:33:55.9280221+02:00 0HLJ2KABM784S:00000005 [INF] Request finished in 60.6502ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:35:28.9120770+02:00 0HLJ2KABM784S:00000006 [INF] Request starting HTTP/1.1 POST https://localhost:5001/identity/account/logout?returnUrl=%2F application/x-www-form-urlencoded 225 (ca22a1cb)
+2018-12-15T17:35:28.9157950+02:00 0HLJ2KABM784S:00000006 [INF] Executing endpoint '"Page: /Account/Logout"' (500cc934)
+2018-12-15T17:35:29.0001508+02:00 0HLJ2KABM784S:00000006 [INF] Route matched with "{page = \"/Account/Logout\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Logout" (547e620f)
+2018-12-15T17:35:29.0613364+02:00 0HLJ2KABM784S:00000006 [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.LogoutModel.OnPost" with arguments (["/"]) - ModelState is Valid (d4ff7456)
+2018-12-15T17:35:29.0728062+02:00 0HLJ2KABM784S:00000006 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-12-15T17:35:29.0767540+02:00 0HLJ2KABM784S:00000006 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-12-15T17:35:29.0798548+02:00 0HLJ2KABM784S:00000006 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-12-15T17:35:29.0823086+02:00 0HLJ2KABM784S:00000006 [INF] User logged out. (f9c27106)
+2018-12-15T17:35:29.0855631+02:00 0HLJ2KABM784S:00000006 [INF] Executed handler method "OnPost", returned result "Microsoft.AspNetCore.Mvc.LocalRedirectResult". (90fdc39c)
+2018-12-15T17:35:29.0888543+02:00 0HLJ2KABM784S:00000006 [INF] Executing LocalRedirectResult, redirecting to "/". (cac120e6)
+2018-12-15T17:35:29.0912298+02:00 0HLJ2KABM784S:00000006 [INF] Executed page "/Account/Logout" in 88.7224ms (02e01280)
+2018-12-15T17:35:29.0941098+02:00 0HLJ2KABM784S:00000006 [INF] Executed endpoint '"Page: /Account/Logout"' (99874f2b)
+2018-12-15T17:35:29.0968121+02:00 0HLJ2KABM784S:00000006 [INF] Request finished in 185.4042ms 302  (791a596a)
+2018-12-15T17:35:29.1120393+02:00 0HLJ2KABM784S:00000007 [INF] Request starting HTTP/1.1 GET https://localhost:5001/   (ca22a1cb)
+2018-12-15T17:35:29.1146100+02:00 0HLJ2KABM784S:00000007 [INF] Executing endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T17:35:29.1172514+02:00 0HLJ2KABM784S:00000007 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\", page = \"\"}". Executing action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T17:35:29.1432863+02:00 0HLJ2KABM784S:00000007 [INF] Executing action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T17:35:29.1457926+02:00 0HLJ2KABM784S:00000007 [INF] Executed action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.024ms. (50a9e262)
+2018-12-15T17:35:29.1479362+02:00 0HLJ2KABM784S:00000007 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T17:35:29.1524403+02:00 0HLJ2KABM784S:00000007 [INF] Executed ViewResult - view "Index" executed in 3.832ms. (f66409e9)
+2018-12-15T17:35:29.1550643+02:00 0HLJ2KABM784S:00000007 [INF] Executed action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" in 35.2335ms (afa2e885)
+2018-12-15T17:35:29.1577669+02:00 0HLJ2KABM784S:00000007 [INF] Executed endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T17:35:29.1604940+02:00 0HLJ2KABM784S:00000007 [INF] Request finished in 48.2346ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:35:30.3787338+02:00 0HLJ2KABM784S:00000008 [INF] Request starting HTTP/1.1 GET https://localhost:5001/identity/account/register   (ca22a1cb)
+2018-12-15T17:35:30.3818908+02:00 0HLJ2KABM784S:00000008 [INF] Executing endpoint '"Page: /Account/Register"' (500cc934)
+2018-12-15T17:35:30.3863352+02:00 0HLJ2KABM784S:00000008 [INF] Route matched with "{page = \"/Account/Register\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Register" (547e620f)
+2018-12-15T17:35:30.3897952+02:00 0HLJ2KABM784S:00000008 [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.RegisterModel.OnGet" with arguments ([""]) - ModelState is Valid (d4ff7456)
+2018-12-15T17:35:30.3920434+02:00 0HLJ2KABM784S:00000008 [INF] Executed handler method "OnGet", returned result "". (90fdc39c)
+2018-12-15T17:35:30.3949989+02:00 0HLJ2KABM784S:00000008 [INF] Executing an implicit handler method - ModelState is Valid (232a55d1)
+2018-12-15T17:35:30.3975233+02:00 0HLJ2KABM784S:00000008 [INF] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult". (f857da66)
+2018-12-15T17:35:30.4042990+02:00 0HLJ2KABM784S:00000008 [INF] Executed page "/Account/Register" in 15.45ms (02e01280)
+2018-12-15T17:35:30.4066959+02:00 0HLJ2KABM784S:00000008 [INF] Executed endpoint '"Page: /Account/Register"' (99874f2b)
+2018-12-15T17:35:30.4098923+02:00 0HLJ2KABM784S:00000008 [INF] Request finished in 30.5694ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:36:36.9276077+02:00 0HLJ2KABM784S:00000009 [INF] Request starting HTTP/1.1 GET https://localhost:5001/identity/account/register   (ca22a1cb)
+2018-12-15T17:36:36.9416995+02:00 0HLJ2KABM784S:00000009 [INF] Executing endpoint '"Page: /Account/Register"' (500cc934)
+2018-12-15T17:36:37.0108218+02:00 0HLJ2KABM784S:00000009 [INF] Route matched with "{page = \"/Account/Register\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Register" (547e620f)
+2018-12-15T17:36:37.0141288+02:00 0HLJ2KABM784S:00000009 [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.RegisterModel.OnGet" with arguments ([""]) - ModelState is Valid (d4ff7456)
+2018-12-15T17:36:37.0166281+02:00 0HLJ2KABM784S:00000009 [INF] Executed handler method "OnGet", returned result "". (90fdc39c)
+2018-12-15T17:36:37.0187816+02:00 0HLJ2KABM784S:00000009 [INF] Executing an implicit handler method - ModelState is Valid (232a55d1)
+2018-12-15T17:36:37.0208762+02:00 0HLJ2KABM784S:00000009 [INF] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult". (f857da66)
+2018-12-15T17:36:37.0430549+02:00 0HLJ2KABM784S:00000009 [INF] Executed page "/Account/Register" in 28.8608ms (02e01280)
+2018-12-15T17:36:37.0466057+02:00 0HLJ2KABM784S:00000009 [INF] Executed endpoint '"Page: /Account/Register"' (99874f2b)
+2018-12-15T17:36:37.0497729+02:00 0HLJ2KABM784S:00000009 [INF] Request finished in 122.3366ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:36:37.1113180+02:00 0HLJ2KABM784S:0000000A [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-12-15T17:36:37.1556601+02:00 0HLJ2KABM784T:00000001 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css   (ca22a1cb)
+2018-12-15T17:36:37.1777629+02:00 0HLJ2KABM784U:00000001 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-12-15T17:36:37.1789841+02:00 0HLJ2KABM784T:00000001 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2018-12-15T17:36:37.1865380+02:00 0HLJ2KABM784S:0000000A [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2018-12-15T17:36:37.1852244+02:00 0HLJ2KABM784V:00000001 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=qJ6sF6fAQn4m-8y39hiFs0CzFE8ldTJ8vZrFRoBAU5U   (ca22a1cb)
+2018-12-15T17:36:37.1896946+02:00 0HLJ2KABM7850:00000001 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-12-15T17:36:37.1915553+02:00 0HLJ2KABM784U:00000001 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2018-12-15T17:36:37.2032807+02:00 0HLJ2KABM7851:00000001 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-12-15T17:36:37.2061030+02:00 0HLJ2KABM784V:00000001 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2018-12-15T17:36:37.2083000+02:00 0HLJ2KABM784S:0000000A [INF] Request finished in 82.8913ms 304 text/css (791a596a)
+2018-12-15T17:36:37.2121941+02:00 0HLJ2KABM784T:00000001 [INF] Request finished in 52.6976ms 304 text/css (791a596a)
+2018-12-15T17:36:37.2381884+02:00 0HLJ2KABM784S:0000000B [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-12-15T17:36:37.2435292+02:00 0HLJ2KABM784V:00000001 [INF] Request finished in 31.224ms 304 application/javascript (791a596a)
+2018-12-15T17:36:37.2435857+02:00 0HLJ2KABM7850:00000001 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2018-12-15T17:36:37.2486334+02:00 0HLJ2KABM7851:00000001 [INF] The file "/Identity/lib/jquery-validation/dist/jquery.validate.js" was not modified (f1f8d725)
+2018-12-15T17:36:37.2530770+02:00 0HLJ2KABM7850:00000001 [INF] Request finished in 67.1047ms 304 application/javascript (791a596a)
+2018-12-15T17:36:37.2565370+02:00 0HLJ2KABM7851:00000001 [INF] Request finished in 57.2064ms 304 application/javascript (791a596a)
+2018-12-15T17:36:37.2577715+02:00 0HLJ2KABM784U:00000001 [INF] Request finished in 20.7952ms 304 application/javascript (791a596a)
+2018-12-15T17:36:37.2905530+02:00 0HLJ2KABM784S:0000000B [INF] The file "/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified (f1f8d725)
+2018-12-15T17:36:37.2940287+02:00 0HLJ2KABM784S:0000000B [INF] Request finished in 82.2743ms 304 application/javascript (791a596a)
+2018-12-15T17:36:37.3097304+02:00 0HLJ2KABM784S:0000000C [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico   (ca22a1cb)
+2018-12-15T17:36:37.3130434+02:00 0HLJ2KABM784S:0000000C [INF] The file "/favicon.ico" was not modified (f1f8d725)
+2018-12-15T17:36:37.3176893+02:00 0HLJ2KABM784S:0000000C [INF] Request finished in 5.6292ms 304 image/x-icon (791a596a)
+2018-12-15T17:36:37.7587786+02:00 0HLJ2KABM784S:0000000D [INF] Request starting HTTP/1.1 GET https://localhost:5001/identity/account/register   (ca22a1cb)
+2018-12-15T17:36:37.7676027+02:00 0HLJ2KABM784S:0000000D [INF] Executing endpoint '"Page: /Account/Register"' (500cc934)
+2018-12-15T17:36:37.7705478+02:00 0HLJ2KABM784S:0000000D [INF] Route matched with "{page = \"/Account/Register\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Register" (547e620f)
+2018-12-15T17:36:37.7733468+02:00 0HLJ2KABM784S:0000000D [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.RegisterModel.OnGet" with arguments ([""]) - ModelState is Valid (d4ff7456)
+2018-12-15T17:36:37.7755252+02:00 0HLJ2KABM784S:0000000D [INF] Executed handler method "OnGet", returned result "". (90fdc39c)
+2018-12-15T17:36:37.7774388+02:00 0HLJ2KABM784S:0000000D [INF] Executing an implicit handler method - ModelState is Valid (232a55d1)
+2018-12-15T17:36:37.7795244+02:00 0HLJ2KABM784S:0000000D [INF] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult". (f857da66)
+2018-12-15T17:36:37.7839301+02:00 0HLJ2KABM784S:0000000D [INF] Executed page "/Account/Register" in 11.1379ms (02e01280)
+2018-12-15T17:36:37.7873834+02:00 0HLJ2KABM784S:0000000D [INF] Executed endpoint '"Page: /Account/Register"' (99874f2b)
+2018-12-15T17:36:37.7910310+02:00 0HLJ2KABM784S:0000000D [INF] Request finished in 32.1797ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:36:37.8501716+02:00 0HLJ2KABM784S:0000000E [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-12-15T17:36:37.8543431+02:00 0HLJ2KABM784T:00000002 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css   (ca22a1cb)
+2018-12-15T17:36:37.8568008+02:00 0HLJ2KABM784V:00000002 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-12-15T17:36:37.8600241+02:00 0HLJ2KABM7851:00000002 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-12-15T17:36:37.8635338+02:00 0HLJ2KABM784U:00000002 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-12-15T17:36:37.8650513+02:00 0HLJ2KABM784T:00000002 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2018-12-15T17:36:37.8685274+02:00 0HLJ2KABM784V:00000002 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2018-12-15T17:36:37.8712909+02:00 0HLJ2KABM784T:00000002 [INF] Request finished in 17.5332ms 304 text/css (791a596a)
+2018-12-15T17:36:37.8744209+02:00 0HLJ2KABM784U:00000002 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2018-12-15T17:36:37.8777789+02:00 0HLJ2KABM784T:00000003 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-12-15T17:36:37.8816004+02:00 0HLJ2KABM784V:00000002 [INF] Request finished in 20.3215ms 304 application/javascript (791a596a)
+2018-12-15T17:36:37.8852570+02:00 0HLJ2KABM7851:00000002 [INF] The file "/Identity/lib/jquery-validation/dist/jquery.validate.js" was not modified (f1f8d725)
+2018-12-15T17:36:37.8886332+02:00 0HLJ2KABM784T:00000003 [INF] The file "/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified (f1f8d725)
+2018-12-15T17:36:37.8900258+02:00 0HLJ2KABM7851:00000002 [INF] Request finished in 33.4818ms 304 application/javascript (791a596a)
+2018-12-15T17:36:37.8964349+02:00 0HLJ2KABM784U:00000002 [INF] Request finished in 24.9007ms 304 application/javascript (791a596a)
+2018-12-15T17:36:37.8998269+02:00 0HLJ2KABM784T:00000003 [INF] Request finished in 16.1358ms 304 application/javascript (791a596a)
+2018-12-15T17:36:37.9026900+02:00 0HLJ2KABM7850:00000002 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=qJ6sF6fAQn4m-8y39hiFs0CzFE8ldTJ8vZrFRoBAU5U   (ca22a1cb)
+2018-12-15T17:36:37.9040837+02:00 0HLJ2KABM784S:0000000E [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2018-12-15T17:36:37.9080762+02:00 0HLJ2KABM7850:00000002 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2018-12-15T17:36:37.9127629+02:00 0HLJ2KABM784S:0000000E [INF] Request finished in 60.948ms 304 text/css (791a596a)
+2018-12-15T17:36:37.9148199+02:00 0HLJ2KABM7850:00000002 [INF] Request finished in 59.6542ms 304 application/javascript (791a596a)
+2018-12-15T17:36:37.9833168+02:00 0HLJ2KABM784S:0000000F [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico   (ca22a1cb)
+2018-12-15T17:36:37.9867515+02:00 0HLJ2KABM784S:0000000F [INF] The file "/favicon.ico" was not modified (f1f8d725)
+2018-12-15T17:36:37.9902154+02:00 0HLJ2KABM784S:0000000F [INF] Request finished in 7.5705ms 304 image/x-icon (791a596a)
+2018-12-15T17:37:04.4541787+02:00 0HLJ2KABM784S:00000010 [INF] Request starting HTTP/1.1 POST https://localhost:5001/identity/account/register application/x-www-form-urlencoded 367 (ca22a1cb)
+2018-12-15T17:37:04.4575075+02:00 0HLJ2KABM784S:00000010 [INF] Executing endpoint '"Page: /Account/Register"' (500cc934)
+2018-12-15T17:37:04.4652021+02:00 0HLJ2KABM784S:00000010 [INF] Route matched with "{page = \"/Account/Register\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Register" (547e620f)
+2018-12-15T17:37:04.4690172+02:00 0HLJ2KABM784S:00000010 [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.RegisterModel.OnPostAsync" with arguments ([""]) - ModelState is Valid (d4ff7456)
+2018-12-15T17:37:04.4803377+02:00 0HLJ2KABM784S:00000010 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T17:37:04.5240252+02:00 0HLJ2KABM784S:00000010 [INF] Executed DbCommand ("41"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2018-12-15T17:37:04.5933896+02:00 0HLJ2KABM784S:00000010 [INF] Executed DbCommand ("64"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Discriminator], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName], [FirstName], [LastName], [UniqueCitizenNumber])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);" (0723d8ff)
+2018-12-15T17:37:04.5975844+02:00 0HLJ2KABM784S:00000010 [INF] User created a new account with password. (693a7015)
+2018-12-15T17:37:04.6410775+02:00 0HLJ2KABM784S:00000010 [INF] Executed DbCommand ("40"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-12-15T17:37:04.6788233+02:00 0HLJ2KABM784S:00000010 [INF] Executed DbCommand ("33"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-12-15T17:37:04.6833866+02:00 0HLJ2KABM784S:00000010 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-12-15T17:37:04.7245919+02:00 0HLJ2KABM784S:00000010 [INF] Executed DbCommand ("38"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T17:37:04.7923525+02:00 0HLJ2KABM784S:00000010 [INF] Executed DbCommand ("64"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-12-15T17:37:04.8315540+02:00 0HLJ2KABM784S:00000010 [INF] Executed DbCommand ("35"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T17:37:04.8830420+02:00 0HLJ2KABM784S:00000010 [INF] Executed DbCommand ("47"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2018-12-15T17:37:04.9262364+02:00 0HLJ2KABM784S:00000010 [INF] Executed DbCommand ("39"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);" (0723d8ff)
+2018-12-15T17:37:04.9513189+02:00 0HLJ2KABM784S:00000010 [INF] Executed DbCommand ("21"ms) [Parameters=["@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13, [FirstName] = @p14, [LastName] = @p15, [UniqueCitizenNumber] = @p16
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-12-15T17:37:04.9561256+02:00 0HLJ2KABM784S:00000010 [INF] Executed handler method "OnPostAsync", returned result "Microsoft.AspNetCore.Mvc.LocalRedirectResult". (90fdc39c)
+2018-12-15T17:37:04.9581147+02:00 0HLJ2KABM784S:00000010 [INF] Executing LocalRedirectResult, redirecting to "/". (cac120e6)
+2018-12-15T17:37:04.9601785+02:00 0HLJ2KABM784S:00000010 [INF] Executed page "/Account/Register" in 493.0125ms (02e01280)
+2018-12-15T17:37:04.9625651+02:00 0HLJ2KABM784S:00000010 [INF] Executed endpoint '"Page: /Account/Register"' (99874f2b)
+2018-12-15T17:37:04.9656797+02:00 0HLJ2KABM784S:00000010 [INF] Request finished in 511.9122ms 302  (791a596a)
+2018-12-15T17:37:04.9751023+02:00 0HLJ2KABM784S:00000011 [INF] Request starting HTTP/1.1 GET https://localhost:5001/   (ca22a1cb)
+2018-12-15T17:37:04.9790332+02:00 0HLJ2KABM784S:00000011 [INF] Executing endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T17:37:04.9840062+02:00 0HLJ2KABM784S:00000011 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\", page = \"\"}". Executing action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T17:37:05.0184986+02:00 0HLJ2KABM784S:00000011 [INF] Executing action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T17:37:05.0215106+02:00 0HLJ2KABM784S:00000011 [INF] Executed action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0308ms. (50a9e262)
+2018-12-15T17:37:05.0242353+02:00 0HLJ2KABM784S:00000011 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T17:37:05.0284230+02:00 0HLJ2KABM784S:00000011 [INF] Executed ViewResult - view "Index" executed in 4.1852ms. (f66409e9)
+2018-12-15T17:37:05.0313144+02:00 0HLJ2KABM784S:00000011 [INF] Executed action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" in 44.4764ms (afa2e885)
+2018-12-15T17:37:05.0342975+02:00 0HLJ2KABM784S:00000011 [INF] Executed endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T17:37:05.0373834+02:00 0HLJ2KABM784S:00000011 [INF] Request finished in 62.5113ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:37:17.4741680+02:00 0HLJ2KABM784S:00000012 [INF] Request starting HTTP/1.1 POST https://localhost:5001/identity/account/logout?returnUrl=%2F application/x-www-form-urlencoded 225 (ca22a1cb)
+2018-12-15T17:37:17.4833038+02:00 0HLJ2KABM784S:00000012 [INF] Executing endpoint '"Page: /Account/Logout"' (500cc934)
+2018-12-15T17:37:17.4907080+02:00 0HLJ2KABM784S:00000012 [INF] Route matched with "{page = \"/Account/Logout\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Logout" (547e620f)
+2018-12-15T17:37:17.4947175+02:00 0HLJ2KABM784S:00000012 [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.LogoutModel.OnPost" with arguments (["/"]) - ModelState is Valid (d4ff7456)
+2018-12-15T17:37:17.4972720+02:00 0HLJ2KABM784S:00000012 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-12-15T17:37:17.5000781+02:00 0HLJ2KABM784S:00000012 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-12-15T17:37:17.5033077+02:00 0HLJ2KABM784S:00000012 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-12-15T17:37:17.5051515+02:00 0HLJ2KABM784S:00000012 [INF] User logged out. (f9c27106)
+2018-12-15T17:37:17.5068566+02:00 0HLJ2KABM784S:00000012 [INF] Executed handler method "OnPost", returned result "Microsoft.AspNetCore.Mvc.LocalRedirectResult". (90fdc39c)
+2018-12-15T17:37:17.5086794+02:00 0HLJ2KABM784S:00000012 [INF] Executing LocalRedirectResult, redirecting to "/". (cac120e6)
+2018-12-15T17:37:17.5104283+02:00 0HLJ2KABM784S:00000012 [INF] Executed page "/Account/Logout" in 17.9496ms (02e01280)
+2018-12-15T17:37:17.5132368+02:00 0HLJ2KABM784S:00000012 [INF] Executed endpoint '"Page: /Account/Logout"' (99874f2b)
+2018-12-15T17:37:17.5157996+02:00 0HLJ2KABM784S:00000012 [INF] Request finished in 41.641ms 302  (791a596a)
+2018-12-15T17:37:17.5378867+02:00 0HLJ2KABM784S:00000013 [INF] Request starting HTTP/1.1 GET https://localhost:5001/   (ca22a1cb)
+2018-12-15T17:37:17.5409749+02:00 0HLJ2KABM784S:00000013 [INF] Executing endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T17:37:17.5431971+02:00 0HLJ2KABM784S:00000013 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\", page = \"\"}". Executing action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T17:37:17.5670675+02:00 0HLJ2KABM784S:00000013 [INF] Executing action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T17:37:17.5690732+02:00 0HLJ2KABM784S:00000013 [INF] Executed action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0237ms. (50a9e262)
+2018-12-15T17:37:17.5715917+02:00 0HLJ2KABM784S:00000013 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T17:37:17.5751923+02:00 0HLJ2KABM784S:00000013 [INF] Executed ViewResult - view "Index" executed in 3.693ms. (f66409e9)
+2018-12-15T17:37:17.5773813+02:00 0HLJ2KABM784S:00000013 [INF] Executed action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" in 32.0793ms (afa2e885)
+2018-12-15T17:37:17.5799157+02:00 0HLJ2KABM784S:00000013 [INF] Executed endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T17:37:17.5826554+02:00 0HLJ2KABM784S:00000013 [INF] Request finished in 44.4574ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:37:19.0095813+02:00 0HLJ2KABM784S:00000014 [INF] Request starting HTTP/1.1 GET https://localhost:5001/identity/account/register   (ca22a1cb)
+2018-12-15T17:37:19.0125036+02:00 0HLJ2KABM784S:00000014 [INF] Executing endpoint '"Page: /Account/Register"' (500cc934)
+2018-12-15T17:37:19.0149644+02:00 0HLJ2KABM784S:00000014 [INF] Route matched with "{page = \"/Account/Register\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Register" (547e620f)
+2018-12-15T17:37:19.0180143+02:00 0HLJ2KABM784S:00000014 [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.RegisterModel.OnGet" with arguments ([""]) - ModelState is Valid (d4ff7456)
+2018-12-15T17:37:19.0196799+02:00 0HLJ2KABM784S:00000014 [INF] Executed handler method "OnGet", returned result "". (90fdc39c)
+2018-12-15T17:37:19.0214300+02:00 0HLJ2KABM784S:00000014 [INF] Executing an implicit handler method - ModelState is Valid (232a55d1)
+2018-12-15T17:37:19.0231560+02:00 0HLJ2KABM784S:00000014 [INF] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult". (f857da66)
+2018-12-15T17:37:19.0280603+02:00 0HLJ2KABM784S:00000014 [INF] Executed page "/Account/Register" in 10.5611ms (02e01280)
+2018-12-15T17:37:19.0307373+02:00 0HLJ2KABM784S:00000014 [INF] Executed endpoint '"Page: /Account/Register"' (99874f2b)
+2018-12-15T17:37:19.0338266+02:00 0HLJ2KABM784S:00000014 [INF] Request finished in 24.504ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:37:42.4900894+02:00 0HLJ2KABM784S:00000015 [INF] Request starting HTTP/1.1 POST https://localhost:5001/identity/account/register application/x-www-form-urlencoded 361 (ca22a1cb)
+2018-12-15T17:37:42.4934023+02:00 0HLJ2KABM784S:00000015 [INF] Executing endpoint '"Page: /Account/Register"' (500cc934)
+2018-12-15T17:37:42.4981040+02:00 0HLJ2KABM784S:00000015 [INF] Route matched with "{page = \"/Account/Register\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Register" (547e620f)
+2018-12-15T17:37:42.5017172+02:00 0HLJ2KABM784S:00000015 [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.RegisterModel.OnPostAsync" with arguments ([""]) - ModelState is Valid (d4ff7456)
+2018-12-15T17:37:42.5157443+02:00 0HLJ2KABM784S:00000015 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T17:37:42.5652874+02:00 0HLJ2KABM784S:00000015 [INF] Executed DbCommand ("46"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2018-12-15T17:37:42.6107491+02:00 0HLJ2KABM784S:00000015 [INF] Executed DbCommand ("41"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Discriminator], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName], [FirstName], [LastName], [UniqueCitizenNumber])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);" (0723d8ff)
+2018-12-15T17:37:42.6143046+02:00 0HLJ2KABM784S:00000015 [INF] User created a new account with password. (693a7015)
+2018-12-15T17:37:42.6540075+02:00 0HLJ2KABM784S:00000015 [INF] Executed DbCommand ("36"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-12-15T17:37:42.6904468+02:00 0HLJ2KABM784S:00000015 [INF] Executed DbCommand ("33"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-12-15T17:37:42.6938589+02:00 0HLJ2KABM784S:00000015 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-12-15T17:37:42.7432377+02:00 0HLJ2KABM784S:00000015 [INF] Executed DbCommand ("46"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T17:37:42.7855649+02:00 0HLJ2KABM784S:00000015 [INF] Executed DbCommand ("38"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-12-15T17:37:42.8300540+02:00 0HLJ2KABM784S:00000015 [INF] Executed DbCommand ("41"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T17:37:42.8728450+02:00 0HLJ2KABM784S:00000015 [INF] Executed DbCommand ("39"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2018-12-15T17:37:42.9165676+02:00 0HLJ2KABM784S:00000015 [INF] Executed DbCommand ("39"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);" (0723d8ff)
+2018-12-15T17:37:42.9424829+02:00 0HLJ2KABM784S:00000015 [INF] Executed DbCommand ("23"ms) [Parameters=["@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13, [FirstName] = @p14, [LastName] = @p15, [UniqueCitizenNumber] = @p16
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-12-15T17:37:42.9472647+02:00 0HLJ2KABM784S:00000015 [INF] Executed handler method "OnPostAsync", returned result "Microsoft.AspNetCore.Mvc.LocalRedirectResult". (90fdc39c)
+2018-12-15T17:37:42.9501060+02:00 0HLJ2KABM784S:00000015 [INF] Executing LocalRedirectResult, redirecting to "/". (cac120e6)
+2018-12-15T17:37:42.9529382+02:00 0HLJ2KABM784S:00000015 [INF] Executed page "/Account/Register" in 452.0711ms (02e01280)
+2018-12-15T17:37:42.9554326+02:00 0HLJ2KABM784S:00000015 [INF] Executed endpoint '"Page: /Account/Register"' (99874f2b)
+2018-12-15T17:37:42.9582893+02:00 0HLJ2KABM784S:00000015 [INF] Request finished in 467.8214ms 302  (791a596a)
+2018-12-15T17:37:42.9864853+02:00 0HLJ2KABM784S:00000016 [INF] Request starting HTTP/1.1 GET https://localhost:5001/   (ca22a1cb)
+2018-12-15T17:37:42.9897121+02:00 0HLJ2KABM784S:00000016 [INF] Executing endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T17:37:42.9921583+02:00 0HLJ2KABM784S:00000016 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\", page = \"\"}". Executing action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T17:37:43.0159536+02:00 0HLJ2KABM784S:00000016 [INF] Executing action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T17:37:43.0186405+02:00 0HLJ2KABM784S:00000016 [INF] Executed action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.043ms. (50a9e262)
+2018-12-15T17:37:43.0212072+02:00 0HLJ2KABM784S:00000016 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T17:37:43.0249777+02:00 0HLJ2KABM784S:00000016 [INF] Executed ViewResult - view "Index" executed in 3.9565ms. (f66409e9)
+2018-12-15T17:37:43.0279059+02:00 0HLJ2KABM784S:00000016 [INF] Executed action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" in 32.8165ms (afa2e885)
+2018-12-15T17:37:43.0305556+02:00 0HLJ2KABM784S:00000016 [INF] Executed endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T17:37:43.0331776+02:00 0HLJ2KABM784S:00000016 [INF] Request finished in 46.3537ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:37:43.9146642+02:00 0HLJ2KABM784S:00000017 [INF] Request starting HTTP/1.1 POST https://localhost:5001/identity/account/logout?returnUrl=%2F application/x-www-form-urlencoded 225 (ca22a1cb)
+2018-12-15T17:37:43.9176213+02:00 0HLJ2KABM784S:00000017 [INF] Executing endpoint '"Page: /Account/Logout"' (500cc934)
+2018-12-15T17:37:43.9198214+02:00 0HLJ2KABM784S:00000017 [INF] Route matched with "{page = \"/Account/Logout\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Logout" (547e620f)
+2018-12-15T17:37:43.9228487+02:00 0HLJ2KABM784S:00000017 [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.LogoutModel.OnPost" with arguments (["/"]) - ModelState is Valid (d4ff7456)
+2018-12-15T17:37:43.9251702+02:00 0HLJ2KABM784S:00000017 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-12-15T17:37:43.9275974+02:00 0HLJ2KABM784S:00000017 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-12-15T17:37:43.9301480+02:00 0HLJ2KABM784S:00000017 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-12-15T17:37:43.9323532+02:00 0HLJ2KABM784S:00000017 [INF] User logged out. (f9c27106)
+2018-12-15T17:37:43.9344043+02:00 0HLJ2KABM784S:00000017 [INF] Executed handler method "OnPost", returned result "Microsoft.AspNetCore.Mvc.LocalRedirectResult". (90fdc39c)
+2018-12-15T17:37:43.9364460+02:00 0HLJ2KABM784S:00000017 [INF] Executing LocalRedirectResult, redirecting to "/". (cac120e6)
+2018-12-15T17:37:43.9381464+02:00 0HLJ2KABM784S:00000017 [INF] Executed page "/Account/Logout" in 16.664ms (02e01280)
+2018-12-15T17:37:43.9400288+02:00 0HLJ2KABM784S:00000017 [INF] Executed endpoint '"Page: /Account/Logout"' (99874f2b)
+2018-12-15T17:37:43.9425584+02:00 0HLJ2KABM784S:00000017 [INF] Request finished in 28.3097ms 302  (791a596a)
+2018-12-15T17:37:43.9542554+02:00 0HLJ2KABM784S:00000018 [INF] Request starting HTTP/1.1 GET https://localhost:5001/   (ca22a1cb)
+2018-12-15T17:37:43.9565526+02:00 0HLJ2KABM784S:00000018 [INF] Executing endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T17:37:43.9585201+02:00 0HLJ2KABM784S:00000018 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\", page = \"\"}". Executing action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T17:37:43.9847806+02:00 0HLJ2KABM784S:00000018 [INF] Executing action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T17:37:43.9871589+02:00 0HLJ2KABM784S:00000018 [INF] Executed action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0248ms. (50a9e262)
+2018-12-15T17:37:43.9898607+02:00 0HLJ2KABM784S:00000018 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T17:37:43.9953765+02:00 0HLJ2KABM784S:00000018 [INF] Executed ViewResult - view "Index" executed in 3.7957ms. (f66409e9)
+2018-12-15T17:37:43.9984829+02:00 0HLJ2KABM784S:00000018 [INF] Executed action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" in 36.9406ms (afa2e885)
+2018-12-15T17:37:44.0009011+02:00 0HLJ2KABM784S:00000018 [INF] Executed endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T17:37:44.0041366+02:00 0HLJ2KABM784S:00000018 [INF] Request finished in 49.6663ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:37:44.9346737+02:00 0HLJ2KABM784S:00000019 [INF] Request starting HTTP/1.1 GET https://localhost:5001/identity/account/register   (ca22a1cb)
+2018-12-15T17:37:44.9373423+02:00 0HLJ2KABM784S:00000019 [INF] Executing endpoint '"Page: /Account/Register"' (500cc934)
+2018-12-15T17:37:44.9399268+02:00 0HLJ2KABM784S:00000019 [INF] Route matched with "{page = \"/Account/Register\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Register" (547e620f)
+2018-12-15T17:37:44.9426610+02:00 0HLJ2KABM784S:00000019 [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.RegisterModel.OnGet" with arguments ([""]) - ModelState is Valid (d4ff7456)
+2018-12-15T17:37:44.9457868+02:00 0HLJ2KABM784S:00000019 [INF] Executed handler method "OnGet", returned result "". (90fdc39c)
+2018-12-15T17:37:44.9482603+02:00 0HLJ2KABM784S:00000019 [INF] Executing an implicit handler method - ModelState is Valid (232a55d1)
+2018-12-15T17:37:44.9510059+02:00 0HLJ2KABM784S:00000019 [INF] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult". (f857da66)
+2018-12-15T17:37:44.9552062+02:00 0HLJ2KABM784S:00000019 [INF] Executed page "/Account/Register" in 12.9836ms (02e01280)
+2018-12-15T17:37:44.9574439+02:00 0HLJ2KABM784S:00000019 [INF] Executed endpoint '"Page: /Account/Register"' (99874f2b)
+2018-12-15T17:37:44.9614237+02:00 0HLJ2KABM784S:00000019 [INF] Request finished in 25.4407ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:38:07.2177100+02:00 0HLJ2KABM784S:0000001A [INF] Request starting HTTP/1.1 POST https://localhost:5001/identity/account/register application/x-www-form-urlencoded 368 (ca22a1cb)
+2018-12-15T17:38:07.2198737+02:00 0HLJ2KABM784S:0000001A [INF] Executing endpoint '"Page: /Account/Register"' (500cc934)
+2018-12-15T17:38:07.2221038+02:00 0HLJ2KABM784S:0000001A [INF] Route matched with "{page = \"/Account/Register\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Register" (547e620f)
+2018-12-15T17:38:07.2260631+02:00 0HLJ2KABM784S:0000001A [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.RegisterModel.OnPostAsync" with arguments ([""]) - ModelState is Valid (d4ff7456)
+2018-12-15T17:38:07.2389793+02:00 0HLJ2KABM784S:0000001A [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T17:38:07.3089233+02:00 0HLJ2KABM784S:0000001A [INF] Executed DbCommand ("65"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2018-12-15T17:38:07.3354699+02:00 0HLJ2KABM784S:0000001A [WRN] User "3e75109e-0654-4661-9809-71e40ffed666" validation failed: "DuplicateUserName". (5dc28e15)
+2018-12-15T17:38:07.3384723+02:00 0HLJ2KABM784S:0000001A [INF] Executed handler method "OnPostAsync", returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult". (90fdc39c)
+2018-12-15T17:38:07.3502171+02:00 0HLJ2KABM784S:0000001A [INF] Executed page "/Account/Register" in 126.0056ms (02e01280)
+2018-12-15T17:38:07.3525926+02:00 0HLJ2KABM784S:0000001A [INF] Executed endpoint '"Page: /Account/Register"' (99874f2b)
+2018-12-15T17:38:07.3550242+02:00 0HLJ2KABM784S:0000001A [INF] Request finished in 136.967ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:38:49.8951478+02:00  [WRN] No type was specified for the decimal column '"TicketPrice"' on entity type '"Event"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2018-12-15T17:38:49.9831639+02:00  [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T17:38:50.4931113+02:00  [INF] Executed DbCommand ("80"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2018-12-15T17:38:50.5111924+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2018-12-15T17:38:50.5346804+02:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-12-15T17:38:50.5442657+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-12-15T17:38:50.8108023+02:00  [INF] Executed DbCommand ("83"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T17:38:50.9316357+02:00  [INF] Executed DbCommand ("59"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T17:38:51.0215734+02:00  [INF] Executed DbCommand ("67"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)" (0723d8ff)
+2018-12-15T17:38:53.4267120+02:00 0HLJ2KDL11KMP:00000001 [INF] Request starting HTTP/1.1 GET https://localhost:5001/   (ca22a1cb)
+2018-12-15T17:38:53.5254988+02:00 0HLJ2KDL11KMP:00000001 [INF] Executing endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T17:38:53.5560824+02:00 0HLJ2KDL11KMP:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\", page = \"\"}". Executing action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T17:38:53.6378811+02:00 0HLJ2KDL11KMP:00000001 [INF] Executing action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T17:38:53.6471441+02:00 0HLJ2KDL11KMP:00000001 [INF] Executed action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.5854ms. (50a9e262)
+2018-12-15T17:38:53.6881554+02:00 0HLJ2KDL11KMP:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T17:38:53.8888700+02:00 0HLJ2KDL11KMP:00000001 [INF] Executed ViewResult - view "Index" executed in 229.9573ms. (f66409e9)
+2018-12-15T17:38:53.8936518+02:00 0HLJ2KDL11KMP:00000001 [INF] Executed action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" in 332.8439ms (afa2e885)
+2018-12-15T17:38:53.8966361+02:00 0HLJ2KDL11KMP:00000001 [INF] Executed endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T17:38:53.9081719+02:00 0HLJ2KDL11KMP:00000001 [INF] Request finished in 481.9832ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:38:56.1102133+02:00 0HLJ2KDL11KMP:00000002 [INF] Request starting HTTP/1.1 GET https://localhost:5001/identity/account/register   (ca22a1cb)
+2018-12-15T17:38:56.1178060+02:00 0HLJ2KDL11KMP:00000002 [INF] Executing endpoint '"Page: /Account/Register"' (500cc934)
+2018-12-15T17:38:56.2158101+02:00 0HLJ2KDL11KMP:00000002 [INF] Route matched with "{page = \"/Account/Register\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Register" (547e620f)
+2018-12-15T17:38:56.2483568+02:00 0HLJ2KDL11KMP:00000002 [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.RegisterModel.OnGet" with arguments ([""]) - ModelState is Valid (d4ff7456)
+2018-12-15T17:38:56.2521774+02:00 0HLJ2KDL11KMP:00000002 [INF] Executed handler method "OnGet", returned result "". (90fdc39c)
+2018-12-15T17:38:56.2606136+02:00 0HLJ2KDL11KMP:00000002 [INF] Executing an implicit handler method - ModelState is Valid (232a55d1)
+2018-12-15T17:38:56.2641790+02:00 0HLJ2KDL11KMP:00000002 [INF] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult". (f857da66)
+2018-12-15T17:38:56.3738804+02:00 0HLJ2KDL11KMP:00000002 [INF] Executed page "/Account/Register" in 155.3243ms (02e01280)
+2018-12-15T17:38:56.3770800+02:00 0HLJ2KDL11KMP:00000002 [INF] Executed endpoint '"Page: /Account/Register"' (99874f2b)
+2018-12-15T17:38:56.3807241+02:00 0HLJ2KDL11KMP:00000002 [INF] Request finished in 270.2046ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T17:39:12.9519754+02:00 0HLJ2KDL11KMP:00000003 [INF] Request starting HTTP/1.1 POST https://localhost:5001/identity/account/register application/x-www-form-urlencoded 378 (ca22a1cb)
+2018-12-15T17:39:12.9607296+02:00 0HLJ2KDL11KMP:00000003 [INF] Executing endpoint '"Page: /Account/Register"' (500cc934)
+2018-12-15T17:39:12.9633165+02:00 0HLJ2KDL11KMP:00000003 [INF] Route matched with "{page = \"/Account/Register\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Register" (547e620f)
+2018-12-15T17:39:13.0052234+02:00 0HLJ2KDL11KMP:00000003 [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.RegisterModel.OnPostAsync" with arguments ([""]) - ModelState is Valid (d4ff7456)
+2018-12-15T17:39:13.0962373+02:00 0HLJ2KDL11KMP:00000003 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T17:39:13.1705993+02:00 0HLJ2KDL11KMP:00000003 [INF] Executed DbCommand ("59"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2018-12-15T17:39:13.2330570+02:00 0HLJ2KDL11KMP:00000003 [INF] Executed DbCommand ("49"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)" (0723d8ff)
+2018-12-15T17:39:13.2431085+02:00 0HLJ2KDL11KMP:00000003 [WRN] User "1c0977b1-4513-41bf-bfe7-9ab71ceef74b" validation failed: "DuplicateEmail". (5dc28e15)
+2018-12-15T17:39:13.2565228+02:00 0HLJ2KDL11KMP:00000003 [INF] Executed handler method "OnPostAsync", returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult". (90fdc39c)
+2018-12-15T17:39:13.3080491+02:00 0HLJ2KDL11KMP:00000003 [INF] Executed page "/Account/Register" in 311.4703ms (02e01280)
+2018-12-15T17:39:13.3143950+02:00 0HLJ2KDL11KMP:00000003 [INF] Executed endpoint '"Page: /Account/Register"' (99874f2b)
+2018-12-15T17:39:13.3295166+02:00 0HLJ2KDL11KMP:00000003 [INF] Request finished in 376.7767ms 200 text/html; charset=utf-8 (791a596a)
