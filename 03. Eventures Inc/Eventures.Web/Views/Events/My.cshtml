@@ -1,0 +1,63 @@
+﻿@model MyEventsListingViewModel
+
+@{
+    ViewData["Title"] = "My Events";
+
+    var eventsCount = Model.Events.Count();
+    var index = (Model.CurrentPage - 1) * EventsPageSize + 1;
+
+    if (Model.CurrentPage == 1)
+    {
+        index = 1;
+    }
+
+}
+
+<h1 class="text-center">My Events</h1>
+<hr class="hr-2 eventures-bg-color" />
+<div class="container-fluid">
+    <table class="table table-hover">
+        <thead>
+            <tr class="row">
+                <th class="col-md-1">#</th>
+                <th class="col-md-3">Name</th>
+                <th class="col-md-3">Start date</th>
+                <th class="col-md-3">End date</th>
+                <th class="col-md-2">Tickets count</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var currentEvent in Model.Events)
+            {
+                <tr class="row">
+                    <th class="col-md-1">@(index++)</th>
+                    <td class="col-md-3">@currentEvent.EventName</td>
+                    <td class="col-md-3">@currentEvent.Start</td>
+                    <td class="col-md-3">@currentEvent.End</td>
+                    <td class="col-md-2">@currentEvent.Tickets</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@if (Model.TotalEvents > eventsCount)
+{
+    <div style="height:40px;margin-left:510px">
+        <ul class="pagination">
+            <li class="page-item @(Model.CurrentPage == 1 ? "disabled" : string.Empty)">
+                <a class="page-link" asp-controller="Events" asp-action="My" asp-route-pageNumber="@(Model.PreviousPage)" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item @(Model.CurrentPage == Model.TotalPages ? "disabled" : string.Empty)">
+                <a class="page-link" asp-controller="Events" asp-action="My" asp-route-pageNumber="@(Model.NextPage)" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+}
+<hr class="hr-2 eventures-bg-color" />
