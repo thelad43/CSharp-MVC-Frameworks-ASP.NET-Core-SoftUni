@@ -12,6 +12,19 @@
             <partial name="_ManageNav" />
         </div>
         <div class="col-md-9">
+            @if (TempData.ContainsKey(TempDataSuccessMessageKey))
+            {
+                <div class="alert alert-success">
+                    @TempData[TempDataSuccessMessageKey]
+                </div>
+            }
+
+            @if (TempData.ContainsKey(TempDataErrorMessageKey))
+            {
+                <div class="alert alert-danger">
+                    @TempData[TempDataErrorMessageKey]
+                </div>
+            }
             @RenderBody()
         </div>
     </div>

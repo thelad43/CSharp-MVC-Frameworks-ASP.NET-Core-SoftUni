@@ -1,4 +1,4 @@
-﻿namespace Chushka.Web.Areas.Identity.Pages
+﻿namespace Eventures.Web.Areas.Identity.Pages
 {
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;

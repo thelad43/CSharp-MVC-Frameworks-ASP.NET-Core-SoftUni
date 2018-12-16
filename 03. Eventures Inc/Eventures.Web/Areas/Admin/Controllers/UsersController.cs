@@ -61,12 +61,13 @@
 
             if (!roleExists || !userExists)
             {
-                ModelState.AddModelError(string.Empty, "Invalid identity details.");
+                ModelState.AddModelError(string.Empty, "Invalid identity details!");
             }
 
             if (!ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
+                TempData.AddErrorMessage("Invalid identity details! No roles updated!");
+                return RedirectToAction(nameof(UsersController.Index));
             }
 
             if (model.Role == WebConstants.UserRole)
@@ -80,7 +81,7 @@
 
             TempData.AddSuccessMessage($"User {user.UserName} successfully added to the {model.Role} role.");
 
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(UsersController.Index));
         }
     }
 }

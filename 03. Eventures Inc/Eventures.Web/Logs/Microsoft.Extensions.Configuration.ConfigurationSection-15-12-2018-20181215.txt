@@ -2106,3 +2106,973 @@ WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedEmail] = @__normalized
 2018-12-15T17:39:13.3080491+02:00 0HLJ2KDL11KMP:00000003 [INF] Executed page "/Account/Register" in 311.4703ms (02e01280)
 2018-12-15T17:39:13.3143950+02:00 0HLJ2KDL11KMP:00000003 [INF] Executed endpoint '"Page: /Account/Register"' (99874f2b)
 2018-12-15T17:39:13.3295166+02:00 0HLJ2KDL11KMP:00000003 [INF] Request finished in 376.7767ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T22:56:01.7955643+02:00  [WRN] No type was specified for the decimal column '"TicketPrice"' on entity type '"Event"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2018-12-15T22:56:02.1778885+02:00  [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T22:56:04.0158016+02:00  [INF] Executed DbCommand ("531"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2018-12-15T22:56:04.0333343+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2018-12-15T22:56:04.2605555+02:00  [INF] Executed DbCommand ("65"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-12-15T22:56:04.2819833+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-12-15T22:56:05.4589989+02:00  [INF] Executed DbCommand ("396"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T22:56:05.6458498+02:00  [INF] Executed DbCommand ("86"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T22:56:05.7509682+02:00  [INF] Executed DbCommand ("83"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)" (0723d8ff)
+2018-12-15T22:56:10.8149425+02:00 0HLJ2PUUCKC6B:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/   (ca22a1cb)
+2018-12-15T22:56:10.8898761+02:00 0HLJ2PUUCKC6B:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2018-12-15T22:56:11.3033999+02:00 0HLJ2PUUCKC6B:00000001 [INF] Executing endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T22:56:11.3584213+02:00 0HLJ2PUUCKC6B:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\", page = \"\"}". Executing action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T22:56:11.5481337+02:00 0HLJ2PUUCKC6B:00000001 [INF] Executing action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T22:56:11.5564716+02:00 0HLJ2PUUCKC6B:00000001 [INF] Executed action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.651ms. (50a9e262)
+2018-12-15T22:56:11.6458083+02:00 0HLJ2PUUCKC6B:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T22:56:12.3886898+02:00 0HLJ2PUUCKC6B:00000001 [INF] Executed ViewResult - view "Index" executed in 803.4498ms. (f66409e9)
+2018-12-15T22:56:12.3926633+02:00 0HLJ2PUUCKC6B:00000001 [INF] Executed action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" in 1030.4418ms (afa2e885)
+2018-12-15T22:56:12.3957823+02:00 0HLJ2PUUCKC6B:00000001 [INF] Executed endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T22:56:12.4093400+02:00 0HLJ2PUUCKC6B:00000001 [INF] Request finished in 1594.9553ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T22:56:12.5356008+02:00 0HLJ2PUUCKC6D:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-12-15T22:56:12.5385318+02:00 0HLJ2PUUCKC6B:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-12-15T22:56:12.5397797+02:00 0HLJ2PUUCKC6C:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/css/site.css   (ca22a1cb)
+2018-12-15T22:56:12.5444751+02:00 0HLJ2PUUCKC6E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-12-15T22:56:12.5457033+02:00 0HLJ2PUUCKC6F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/js/site.js?v=qJ6sF6fAQn4m-8y39hiFs0CzFE8ldTJ8vZrFRoBAU5U   (ca22a1cb)
+2018-12-15T22:56:12.5818764+02:00 0HLJ2PUUCKC6C:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\css\site.css"' (27b0a520)
+2018-12-15T22:56:12.5919453+02:00 0HLJ2PUUCKC6C:00000001 [INF] Request finished in 52.3875ms 200 text/css (791a596a)
+2018-12-15T22:56:12.6065496+02:00 0HLJ2PUUCKC6E:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-12-15T22:56:12.6119943+02:00 0HLJ2PUUCKC6B:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-12-15T22:56:12.6154665+02:00 0HLJ2PUUCKC6F:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\js\site.js"' (27b0a520)
+2018-12-15T22:56:12.6421481+02:00 0HLJ2PUUCKC6F:00000001 [INF] Request finished in 84.4751ms 200 application/javascript (791a596a)
+2018-12-15T22:56:12.6440440+02:00 0HLJ2PUUCKC6E:00000001 [INF] Request finished in 91.7498ms 200 application/javascript (791a596a)
+2018-12-15T22:56:12.6483427+02:00 0HLJ2PUUCKC6B:00000002 [INF] Request finished in 113.159ms 200 text/css (791a596a)
+2018-12-15T22:56:12.6692655+02:00 0HLJ2PUUCKC6D:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-12-15T22:56:12.6728554+02:00 0HLJ2PUUCKC6D:00000001 [INF] Request finished in 138.2861ms 200 application/javascript (791a596a)
+2018-12-15T22:56:12.7875525+02:00 0HLJ2PUUCKC6D:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57354/favicon.ico   (ca22a1cb)
+2018-12-15T22:56:12.8114971+02:00 0HLJ2PUUCKC6D:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\favicon.ico"' (27b0a520)
+2018-12-15T22:56:12.8145509+02:00 0HLJ2PUUCKC6D:00000002 [INF] Request finished in 27.3595ms 200 image/x-icon (791a596a)
+2018-12-15T22:56:17.4244297+02:00 0HLJ2PUUCKC6D:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:57354/identity/account/login   (ca22a1cb)
+2018-12-15T22:56:17.4317957+02:00 0HLJ2PUUCKC6D:00000003 [INF] Executing endpoint '"Page: /Account/Login"' (500cc934)
+2018-12-15T22:56:17.6609609+02:00 0HLJ2PUUCKC6D:00000003 [INF] Route matched with "{page = \"/Account/Login\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Login" (547e620f)
+2018-12-15T22:56:17.6980734+02:00 0HLJ2PUUCKC6D:00000003 [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.LoginModel.OnGetAsync" with arguments ([""]) - ModelState is Valid (d4ff7456)
+2018-12-15T22:56:17.7340900+02:00 0HLJ2PUUCKC6D:00000003 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-12-15T22:56:17.7452643+02:00 0HLJ2PUUCKC6D:00000003 [INF] Executed handler method "OnGetAsync", returned result "". (90fdc39c)
+2018-12-15T22:56:17.7526977+02:00 0HLJ2PUUCKC6D:00000003 [INF] Executing an implicit handler method - ModelState is Valid (232a55d1)
+2018-12-15T22:56:17.7552692+02:00 0HLJ2PUUCKC6D:00000003 [INF] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult". (f857da66)
+2018-12-15T22:56:17.9242002+02:00 0HLJ2PUUCKC6D:00000003 [INF] Executed page "/Account/Login" in 260.0558ms (02e01280)
+2018-12-15T22:56:17.9271363+02:00 0HLJ2PUUCKC6D:00000003 [INF] Executed endpoint '"Page: /Account/Login"' (99874f2b)
+2018-12-15T22:56:17.9302225+02:00 0HLJ2PUUCKC6D:00000003 [INF] Request finished in 505.2049ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T22:56:18.0319872+02:00 0HLJ2PUUCKC6E:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57354/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-12-15T22:56:18.0319749+02:00 0HLJ2PUUCKC6D:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:57354/Identity/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-12-15T22:56:18.0428894+02:00 0HLJ2PUUCKC6E:00000002 [INF] Sending file. Request path: '"/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"N/A"' (27b0a520)
+2018-12-15T22:56:18.0458930+02:00 0HLJ2PUUCKC6E:00000002 [INF] Request finished in 26.9202ms 200 application/javascript (791a596a)
+2018-12-15T22:56:18.0487817+02:00 0HLJ2PUUCKC6D:00000004 [INF] Sending file. Request path: '"/Identity/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"N/A"' (27b0a520)
+2018-12-15T22:56:18.0542793+02:00 0HLJ2PUUCKC6D:00000004 [INF] Request finished in 32.9647ms 200 application/javascript (791a596a)
+2018-12-15T22:56:23.4719378+02:00 0HLJ2PUUCKC6D:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:57354/identity/account/login application/x-www-form-urlencoded 257 (ca22a1cb)
+2018-12-15T22:56:23.4809646+02:00 0HLJ2PUUCKC6D:00000005 [INF] Executing endpoint '"Page: /Account/Login"' (500cc934)
+2018-12-15T22:56:23.4837273+02:00 0HLJ2PUUCKC6D:00000005 [INF] Route matched with "{page = \"/Account/Login\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Login" (547e620f)
+2018-12-15T22:56:23.7106304+02:00 0HLJ2PUUCKC6D:00000005 [INF] Executing handler method "Eventures.Web.Areas.Identity.Pages.Account.LoginModel.OnPostAsync" with arguments ([""]) - ModelState is Valid (d4ff7456)
+2018-12-15T22:56:23.7356572+02:00 0HLJ2PUUCKC6D:00000005 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T22:56:23.8144834+02:00 0HLJ2PUUCKC6D:00000005 [INF] Executed DbCommand ("64"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2018-12-15T22:56:24.1026360+02:00 0HLJ2PUUCKC6D:00000005 [INF] Executed DbCommand ("69"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-12-15T22:56:24.2666904+02:00 0HLJ2PUUCKC6D:00000005 [INF] Executed DbCommand ("54"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-12-15T22:56:24.3089537+02:00 0HLJ2PUUCKC6D:00000005 [INF] Executed DbCommand ("32"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T22:56:24.3619899+02:00 0HLJ2PUUCKC6D:00000005 [INF] Executed DbCommand ("39"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-12-15T22:56:24.3766277+02:00 0HLJ2PUUCKC6D:00000005 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-12-15T22:56:24.3845207+02:00 0HLJ2PUUCKC6D:00000005 [INF] User logged in. (fdce0db4)
+2018-12-15T22:56:24.3923183+02:00 0HLJ2PUUCKC6D:00000005 [INF] Executed handler method "OnPostAsync", returned result "Microsoft.AspNetCore.Mvc.LocalRedirectResult". (90fdc39c)
+2018-12-15T22:56:24.4253096+02:00 0HLJ2PUUCKC6D:00000005 [INF] Executing LocalRedirectResult, redirecting to "/". (cac120e6)
+2018-12-15T22:56:24.4307350+02:00 0HLJ2PUUCKC6D:00000005 [INF] Executed page "/Account/Login" in 944.6763ms (02e01280)
+2018-12-15T22:56:24.4352149+02:00 0HLJ2PUUCKC6D:00000005 [INF] Executed endpoint '"Page: /Account/Login"' (99874f2b)
+2018-12-15T22:56:24.4420760+02:00 0HLJ2PUUCKC6D:00000005 [INF] Request finished in 970.833ms 302  (791a596a)
+2018-12-15T22:56:24.4589944+02:00 0HLJ2PUUCKC6D:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:57354/   (ca22a1cb)
+2018-12-15T22:56:24.4765842+02:00 0HLJ2PUUCKC6D:00000006 [INF] Executing endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T22:56:24.4796170+02:00 0HLJ2PUUCKC6D:00000006 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\", page = \"\"}". Executing action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T22:56:24.5024979+02:00 0HLJ2PUUCKC6D:00000006 [INF] Executing action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T22:56:24.5069091+02:00 0HLJ2PUUCKC6D:00000006 [INF] Executed action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.218ms. (50a9e262)
+2018-12-15T22:56:24.5104797+02:00 0HLJ2PUUCKC6D:00000006 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T22:56:24.5419250+02:00 0HLJ2PUUCKC6D:00000006 [INF] Executed ViewResult - view "Index" executed in 32.2196ms. (f66409e9)
+2018-12-15T22:56:24.5443419+02:00 0HLJ2PUUCKC6D:00000006 [INF] Executed action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" in 62.3545ms (afa2e885)
+2018-12-15T22:56:24.5467475+02:00 0HLJ2PUUCKC6D:00000006 [INF] Executed endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T22:56:24.5495390+02:00 0HLJ2PUUCKC6D:00000006 [INF] Request finished in 90.1052ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T22:56:27.4064726+02:00 0HLJ2PUUCKC6D:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:57354/admin/users   (ca22a1cb)
+2018-12-15T22:56:27.4100400+02:00 0HLJ2PUUCKC6D:00000007 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T22:56:27.4187539+02:00 0HLJ2PUUCKC6D:00000007 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T22:56:27.4319312+02:00 0HLJ2PUUCKC6D:00000007 [INF] Authorization was successful. (0d575a54)
+2018-12-15T22:56:27.4576145+02:00 0HLJ2PUUCKC6D:00000007 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T22:56:27.4698654+02:00 0HLJ2PUUCKC6D:00000007 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T22:56:27.8223451+02:00 0HLJ2PUUCKC6D:00000007 [INF] Executed DbCommand ("37"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoIdentityUser].[Email], [dtoIdentityUser].[Id], [dtoIdentityUser].[UserName]
+FROM [AspNetUsers] AS [dtoIdentityUser]
+WHERE [dtoIdentityUser].[Discriminator] IN (N'User', N'IdentityUser')" (0723d8ff)
+2018-12-15T22:56:27.8749768+02:00 0HLJ2PUUCKC6D:00000007 [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name] AS [Value]
+FROM [AspNetRoles] AS [r]" (0723d8ff)
+2018-12-15T22:56:27.8804832+02:00 0HLJ2PUUCKC6D:00000007 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 420.5235ms. (50a9e262)
+2018-12-15T22:56:27.8931773+02:00 0HLJ2PUUCKC6D:00000007 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T22:56:27.9264715+02:00 0HLJ2PUUCKC6D:00000007 [INF] Executed ViewResult - view "Index" executed in 37.3036ms. (f66409e9)
+2018-12-15T22:56:27.9292349+02:00 0HLJ2PUUCKC6D:00000007 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" in 507.7542ms (afa2e885)
+2018-12-15T22:56:27.9313734+02:00 0HLJ2PUUCKC6D:00000007 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T22:56:27.9340337+02:00 0HLJ2PUUCKC6D:00000007 [INF] Request finished in 528.0185ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T22:56:49.3146149+02:00 0HLJ2PUUCKC6D:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2018-12-15T22:56:49.3466896+02:00 0HLJ2PUUCKC6D:00000008 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css.map"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map"' (27b0a520)
+2018-12-15T22:56:49.3503593+02:00 0HLJ2PUUCKC6D:00000008 [INF] Request finished in 35.1565ms 200 text/plain (791a596a)
+2018-12-15T22:57:18.2329771+02:00 0HLJ2PUUCKC6D:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2018-12-15T22:57:18.2683276+02:00 0HLJ2PUUCKC6D:00000009 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css.map" was not modified (f1f8d725)
+2018-12-15T22:57:18.2732627+02:00 0HLJ2PUUCKC6D:00000009 [INF] Request finished in 40.1267ms 304 text/plain (791a596a)
+2018-12-15T22:57:47.5690384+02:00 0HLJ2PUUCKC6D:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2018-12-15T22:57:47.5718007+02:00 0HLJ2PUUCKC6D:0000000A [INF] The file "/lib/bootstrap/dist/css/bootstrap.css.map" was not modified (f1f8d725)
+2018-12-15T22:57:47.5743749+02:00 0HLJ2PUUCKC6D:0000000A [INF] Request finished in 5.4818ms 304 text/plain (791a596a)
+2018-12-15T22:58:27.1965820+02:00 0HLJ2PUUCKC6D:0000000B [INF] Request starting HTTP/1.1 POST http://localhost:57354/admin/users/addtorole application/x-www-form-urlencoded 281 (ca22a1cb)
+2018-12-15T22:58:27.2022859+02:00 0HLJ2PUUCKC6D:0000000B [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (500cc934)
+2018-12-15T22:58:27.2100860+02:00 0HLJ2PUUCKC6D:0000000B [INF] Route matched with "{area = \"Admin\", action = \"AddToRole\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" (a44c0341)
+2018-12-15T22:58:27.2133998+02:00 0HLJ2PUUCKC6D:0000000B [INF] Authorization was successful. (0d575a54)
+2018-12-15T22:58:27.2466300+02:00 0HLJ2PUUCKC6D:0000000B [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" with arguments (["Eventures.Web.Areas.Admin.Models.Users.AddUserToRoleFormModel"]) - Validation state: Valid (4e3479ed)
+2018-12-15T22:58:30.7062602+02:00 0HLJ2PUUCKC6D:0000000B [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T22:58:30.7847486+02:00 0HLJ2PUUCKC6D:0000000B [INF] Executed DbCommand ("47"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T22:58:33.4688101+02:00 0HLJ2PUUCKC6D:0000000B [INF] Executed DbCommand ("81"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Discriminator], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName], [e].[FirstName], [e].[LastName], [e].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [e]
+WHERE ([e].[Discriminator] = N'User') AND ([e].[Id] = @__get_Item_0)" (0723d8ff)
+2018-12-15T22:58:42.3807735+02:00 0HLJ2PUUCKC6D:0000000B [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 15131.1129ms. (50a9e262)
+2018-12-15T22:58:42.3854566+02:00 0HLJ2PUUCKC6D:0000000B [INF] Executing RedirectResult, redirecting to "/admin/users". (d98d540e)
+2018-12-15T22:58:42.3881371+02:00 0HLJ2PUUCKC6D:0000000B [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" in 15175.6012ms (afa2e885)
+2018-12-15T22:58:42.3901081+02:00 0HLJ2PUUCKC6D:0000000B [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (99874f2b)
+2018-12-15T22:58:42.3926171+02:00 0HLJ2PUUCKC6D:0000000B [INF] Request finished in 15197.0637ms 302  (791a596a)
+2018-12-15T22:58:42.4703355+02:00 0HLJ2PUUCKC6D:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:57354/admin/users   (ca22a1cb)
+2018-12-15T22:58:42.4734510+02:00 0HLJ2PUUCKC6D:0000000C [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T22:58:42.4760611+02:00 0HLJ2PUUCKC6D:0000000C [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T22:58:42.4784607+02:00 0HLJ2PUUCKC6D:0000000C [INF] Authorization was successful. (0d575a54)
+2018-12-15T22:58:42.5032552+02:00 0HLJ2PUUCKC6D:0000000C [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T22:58:42.5060009+02:00 0HLJ2PUUCKC6D:0000000C [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T22:58:42.5395487+02:00 0HLJ2PUUCKC6D:0000000C [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoIdentityUser].[Email], [dtoIdentityUser].[Id], [dtoIdentityUser].[UserName]
+FROM [AspNetUsers] AS [dtoIdentityUser]
+WHERE [dtoIdentityUser].[Discriminator] IN (N'User', N'IdentityUser')" (0723d8ff)
+2018-12-15T22:58:42.5741272+02:00 0HLJ2PUUCKC6D:0000000C [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name] AS [Value]
+FROM [AspNetRoles] AS [r]" (0723d8ff)
+2018-12-15T22:58:42.5773992+02:00 0HLJ2PUUCKC6D:0000000C [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 71.254ms. (50a9e262)
+2018-12-15T22:58:42.5802559+02:00 0HLJ2PUUCKC6D:0000000C [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T22:58:42.5861257+02:00 0HLJ2PUUCKC6D:0000000C [INF] Executed ViewResult - view "Index" executed in 5.8236ms. (f66409e9)
+2018-12-15T22:58:42.5891684+02:00 0HLJ2PUUCKC6D:0000000C [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" in 110.1601ms (afa2e885)
+2018-12-15T22:58:42.5913828+02:00 0HLJ2PUUCKC6D:0000000C [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T22:58:42.5941497+02:00 0HLJ2PUUCKC6D:0000000C [INF] Request finished in 124.7315ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T23:03:59.2898758+02:00  [WRN] No type was specified for the decimal column '"TicketPrice"' on entity type '"Event"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2018-12-15T23:03:59.3519490+02:00  [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:03:59.7951013+02:00  [INF] Executed DbCommand ("83"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2018-12-15T23:03:59.8140757+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2018-12-15T23:03:59.8657517+02:00  [INF] Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-12-15T23:03:59.8752853+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-12-15T23:04:00.1316237+02:00  [INF] Executed DbCommand ("85"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T23:04:00.2522537+02:00  [INF] Executed DbCommand ("64"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T23:04:00.3205373+02:00  [INF] Executed DbCommand ("48"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)" (0723d8ff)
+2018-12-15T23:04:02.8699069+02:00 0HLJ2Q3B8Q0FS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/   (ca22a1cb)
+2018-12-15T23:04:02.8856386+02:00 0HLJ2Q3B8Q0FS:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2018-12-15T23:04:03.0605896+02:00 0HLJ2Q3B8Q0FS:00000001 [INF] Executing endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T23:04:03.0913954+02:00 0HLJ2Q3B8Q0FS:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\", page = \"\"}". Executing action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T23:04:03.1754723+02:00 0HLJ2Q3B8Q0FS:00000001 [INF] Executing action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T23:04:03.1829259+02:00 0HLJ2Q3B8Q0FS:00000001 [INF] Executed action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.6451ms. (50a9e262)
+2018-12-15T23:04:03.2336980+02:00 0HLJ2Q3B8Q0FS:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T23:04:03.6872551+02:00 0HLJ2Q3B8Q0FS:00000001 [INF] Executed ViewResult - view "Index" executed in 493.2547ms. (f66409e9)
+2018-12-15T23:04:03.6904475+02:00 0HLJ2Q3B8Q0FS:00000001 [INF] Executed action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" in 596.0793ms (afa2e885)
+2018-12-15T23:04:03.6928317+02:00 0HLJ2Q3B8Q0FS:00000001 [INF] Executed endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T23:04:03.7061883+02:00 0HLJ2Q3B8Q0FS:00000001 [INF] Request finished in 836.567ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T23:04:03.7987571+02:00 0HLJ2Q3B8Q0FS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-12-15T23:04:03.8008929+02:00 0HLJ2Q3B8Q0FT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/css/site.css   (ca22a1cb)
+2018-12-15T23:04:03.8029831+02:00 0HLJ2Q3B8Q0FU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-12-15T23:04:03.8041525+02:00 0HLJ2Q3B8Q0FV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-12-15T23:04:03.8101163+02:00 0HLJ2Q3B8Q0G0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/js/site.js?v=qJ6sF6fAQn4m-8y39hiFs0CzFE8ldTJ8vZrFRoBAU5U   (ca22a1cb)
+2018-12-15T23:04:03.8199506+02:00 0HLJ2Q3B8Q0FT:00000001 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2018-12-15T23:04:03.8215909+02:00 0HLJ2Q3B8Q0G0:00000001 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2018-12-15T23:04:03.8250307+02:00 0HLJ2Q3B8Q0FU:00000001 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2018-12-15T23:04:03.8268077+02:00 0HLJ2Q3B8Q0FV:00000001 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2018-12-15T23:04:03.8299335+02:00 0HLJ2Q3B8Q0FS:00000002 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2018-12-15T23:04:03.8550353+02:00 0HLJ2Q3B8Q0FT:00000001 [INF] Request finished in 37.8583ms 304 text/css (791a596a)
+2018-12-15T23:04:03.8577885+02:00 0HLJ2Q3B8Q0G0:00000001 [INF] Request finished in 28.461ms 304 application/javascript (791a596a)
+2018-12-15T23:04:03.8626907+02:00 0HLJ2Q3B8Q0FU:00000001 [INF] Request finished in 39.0921ms 304 application/javascript (791a596a)
+2018-12-15T23:04:03.8690955+02:00 0HLJ2Q3B8Q0FV:00000001 [INF] Request finished in 34.6113ms 304 application/javascript (791a596a)
+2018-12-15T23:04:03.8704343+02:00 0HLJ2Q3B8Q0FS:00000002 [INF] Request finished in 38.9439ms 304 text/css (791a596a)
+2018-12-15T23:04:03.9120980+02:00 0HLJ2Q3B8Q0FT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57354/favicon.ico   (ca22a1cb)
+2018-12-15T23:04:03.9201477+02:00 0HLJ2Q3B8Q0FT:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\favicon.ico"' (27b0a520)
+2018-12-15T23:04:03.9233524+02:00 0HLJ2Q3B8Q0FT:00000002 [INF] Request finished in 10.2581ms 200 image/x-icon (791a596a)
+2018-12-15T23:04:12.6785092+02:00 0HLJ2Q3B8Q0FT:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:57354/admin/users   (ca22a1cb)
+2018-12-15T23:04:12.6882360+02:00 0HLJ2Q3B8Q0FT:00000003 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T23:04:12.7026047+02:00 0HLJ2Q3B8Q0FT:00000003 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T23:04:12.7212398+02:00 0HLJ2Q3B8Q0FT:00000003 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:04:12.7499086+02:00 0HLJ2Q3B8Q0FT:00000003 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T23:04:12.7646756+02:00 0HLJ2Q3B8Q0FT:00000003 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:04:13.0021060+02:00 0HLJ2Q3B8Q0FT:00000003 [INF] Executed DbCommand ("45"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoIdentityUser].[Email], [dtoIdentityUser].[Id], [dtoIdentityUser].[UserName]
+FROM [AspNetUsers] AS [dtoIdentityUser]
+WHERE [dtoIdentityUser].[Discriminator] IN (N'User', N'IdentityUser')" (0723d8ff)
+2018-12-15T23:04:13.0612933+02:00 0HLJ2Q3B8Q0FT:00000003 [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name] AS [Value]
+FROM [AspNetRoles] AS [r]" (0723d8ff)
+2018-12-15T23:04:13.0709221+02:00 0HLJ2Q3B8Q0FT:00000003 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 318.8386ms. (50a9e262)
+2018-12-15T23:04:13.1362233+02:00 0HLJ2Q3B8Q0FT:00000003 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T23:04:13.1690107+02:00 0HLJ2Q3B8Q0FT:00000003 [INF] Executed ViewResult - view "Index" executed in 86.5844ms. (f66409e9)
+2018-12-15T23:04:13.1744550+02:00 0HLJ2Q3B8Q0FT:00000003 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" in 469.7134ms (afa2e885)
+2018-12-15T23:04:13.1791535+02:00 0HLJ2Q3B8Q0FT:00000003 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T23:04:13.1902291+02:00 0HLJ2Q3B8Q0FT:00000003 [INF] Request finished in 512.06ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T23:04:15.8418197+02:00 0HLJ2Q3B8Q0FT:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2018-12-15T23:04:15.8442375+02:00 0HLJ2Q3B8Q0FT:00000004 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css.map" was not modified (f1f8d725)
+2018-12-15T23:04:15.8475141+02:00 0HLJ2Q3B8Q0FT:00000004 [INF] Request finished in 4.8185ms 304 text/plain (791a596a)
+2018-12-15T23:04:34.2135938+02:00 0HLJ2Q3B8Q0FT:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:57354/admin/users/addtorole application/x-www-form-urlencoded 281 (ca22a1cb)
+2018-12-15T23:04:34.2208325+02:00 0HLJ2Q3B8Q0FT:00000005 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (500cc934)
+2018-12-15T23:04:34.2406243+02:00 0HLJ2Q3B8Q0FT:00000005 [INF] Route matched with "{area = \"Admin\", action = \"AddToRole\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" (a44c0341)
+2018-12-15T23:04:34.2444153+02:00 0HLJ2Q3B8Q0FT:00000005 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:04:34.3409829+02:00 0HLJ2Q3B8Q0FT:00000005 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" with arguments (["Eventures.Web.Areas.Admin.Models.Users.AddUserToRoleFormModel"]) - Validation state: Valid (4e3479ed)
+2018-12-15T23:04:37.1686958+02:00 0HLJ2Q3B8Q0FT:00000005 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:04:37.2281819+02:00 0HLJ2Q3B8Q0FT:00000005 [INF] Executed DbCommand ("36"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T23:04:39.0116459+02:00 0HLJ2Q3B8Q0FT:00000005 [INF] Executed DbCommand ("25"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Discriminator], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName], [e].[FirstName], [e].[LastName], [e].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [e]
+WHERE ([e].[Discriminator] = N'User') AND ([e].[Id] = @__get_Item_0)" (0723d8ff)
+2018-12-15T23:04:39.0185519+02:00 0HLJ2Q3B8Q0FT:00000005 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 4675.4151ms. (50a9e262)
+2018-12-15T23:04:39.0219218+02:00 0HLJ2Q3B8Q0FT:00000005 [INF] Executing RedirectResult, redirecting to "/admin/users". (d98d540e)
+2018-12-15T23:04:39.3249549+02:00 0HLJ2Q3B8Q0FT:00000005 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" in 5082.0744ms (afa2e885)
+2018-12-15T23:04:39.3269361+02:00 0HLJ2Q3B8Q0FT:00000005 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (99874f2b)
+2018-12-15T23:04:39.3296300+02:00 0HLJ2Q3B8Q0FT:00000005 [INF] Request finished in 5117.5019ms 302  (791a596a)
+2018-12-15T23:04:39.3441233+02:00 0HLJ2Q3B8Q0FT:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:57354/admin/users   (ca22a1cb)
+2018-12-15T23:04:39.3481979+02:00 0HLJ2Q3B8Q0FT:00000006 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T23:04:39.3510547+02:00 0HLJ2Q3B8Q0FT:00000006 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T23:04:39.3535348+02:00 0HLJ2Q3B8Q0FT:00000006 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:04:39.3792533+02:00 0HLJ2Q3B8Q0FT:00000006 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T23:04:39.3828886+02:00 0HLJ2Q3B8Q0FT:00000006 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:04:39.4270617+02:00 0HLJ2Q3B8Q0FT:00000006 [INF] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoIdentityUser].[Email], [dtoIdentityUser].[Id], [dtoIdentityUser].[UserName]
+FROM [AspNetUsers] AS [dtoIdentityUser]
+WHERE [dtoIdentityUser].[Discriminator] IN (N'User', N'IdentityUser')" (0723d8ff)
+2018-12-15T23:04:39.4749857+02:00 0HLJ2Q3B8Q0FT:00000006 [INF] Executed DbCommand ("45"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name] AS [Value]
+FROM [AspNetRoles] AS [r]" (0723d8ff)
+2018-12-15T23:04:39.4773676+02:00 0HLJ2Q3B8Q0FT:00000006 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 96.0694ms. (50a9e262)
+2018-12-15T23:04:39.4807687+02:00 0HLJ2Q3B8Q0FT:00000006 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T23:04:39.4855710+02:00 0HLJ2Q3B8Q0FT:00000006 [INF] Executed ViewResult - view "Index" executed in 5.884ms. (f66409e9)
+2018-12-15T23:04:39.4879079+02:00 0HLJ2Q3B8Q0FT:00000006 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" in 134.6155ms (afa2e885)
+2018-12-15T23:04:39.4899408+02:00 0HLJ2Q3B8Q0FT:00000006 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T23:04:39.4923353+02:00 0HLJ2Q3B8Q0FT:00000006 [INF] Request finished in 148.7872ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T23:04:45.8212445+02:00 0HLJ2Q3B8Q0FT:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:57354/admin/users   (ca22a1cb)
+2018-12-15T23:04:45.8249881+02:00 0HLJ2Q3B8Q0FT:00000007 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T23:04:45.8279424+02:00 0HLJ2Q3B8Q0FT:00000007 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T23:04:45.8312750+02:00 0HLJ2Q3B8Q0FT:00000007 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:04:45.8554651+02:00 0HLJ2Q3B8Q0FT:00000007 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T23:04:45.8587196+02:00 0HLJ2Q3B8Q0FT:00000007 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:04:45.8924559+02:00 0HLJ2Q3B8Q0FT:00000007 [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoIdentityUser].[Email], [dtoIdentityUser].[Id], [dtoIdentityUser].[UserName]
+FROM [AspNetUsers] AS [dtoIdentityUser]
+WHERE [dtoIdentityUser].[Discriminator] IN (N'User', N'IdentityUser')" (0723d8ff)
+2018-12-15T23:04:45.9240707+02:00 0HLJ2Q3B8Q0FT:00000007 [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name] AS [Value]
+FROM [AspNetRoles] AS [r]" (0723d8ff)
+2018-12-15T23:04:45.9266654+02:00 0HLJ2Q3B8Q0FT:00000007 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 68.9263ms. (50a9e262)
+2018-12-15T23:04:45.9292870+02:00 0HLJ2Q3B8Q0FT:00000007 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T23:04:45.9346480+02:00 0HLJ2Q3B8Q0FT:00000007 [INF] Executed ViewResult - view "Index" executed in 4.5242ms. (f66409e9)
+2018-12-15T23:04:45.9373672+02:00 0HLJ2Q3B8Q0FT:00000007 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" in 106.7361ms (afa2e885)
+2018-12-15T23:04:45.9396361+02:00 0HLJ2Q3B8Q0FT:00000007 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T23:04:45.9427697+02:00 0HLJ2Q3B8Q0FT:00000007 [INF] Request finished in 121.0341ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T23:04:46.0389754+02:00 0HLJ2Q3B8Q0FT:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-12-15T23:04:46.0637415+02:00 0HLJ2Q3B8Q0G0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-12-15T23:04:46.0793017+02:00 0HLJ2Q3B8Q0FU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-12-15T23:04:46.0943568+02:00 0HLJ2Q3B8Q0G0:00000002 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2018-12-15T23:04:46.0975311+02:00 0HLJ2Q3B8Q0FV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57354/css/site.css   (ca22a1cb)
+2018-12-15T23:04:46.1008748+02:00 0HLJ2Q3B8Q0FU:00000002 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2018-12-15T23:04:46.1032318+02:00 0HLJ2Q3B8Q0G0:00000002 [INF] Request finished in 56.9706ms 304 application/javascript (791a596a)
+2018-12-15T23:04:46.1044387+02:00 0HLJ2Q3B8Q0FV:00000002 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2018-12-15T23:04:46.1108138+02:00 0HLJ2Q3B8Q0FU:00000002 [INF] Request finished in 64.2547ms 304 application/javascript (791a596a)
+2018-12-15T23:04:46.1161408+02:00 0HLJ2Q3B8Q0FV:00000002 [INF] Request finished in 67.7471ms 304 text/css (791a596a)
+2018-12-15T23:04:46.1172375+02:00 0HLJ2Q3B8Q0FT:00000008 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2018-12-15T23:04:46.1214374+02:00 0HLJ2Q3B8Q0FS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:57354/js/site.js?v=qJ6sF6fAQn4m-8y39hiFs0CzFE8ldTJ8vZrFRoBAU5U   (ca22a1cb)
+2018-12-15T23:04:46.1231698+02:00 0HLJ2Q3B8Q0FT:00000008 [INF] Request finished in 94.7712ms 304 text/css (791a596a)
+2018-12-15T23:04:46.1265590+02:00 0HLJ2Q3B8Q0FS:00000003 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2018-12-15T23:04:46.1307336+02:00 0HLJ2Q3B8Q0FS:00000003 [INF] Request finished in 89.1653ms 304 application/javascript (791a596a)
+2018-12-15T23:04:46.1813781+02:00 0HLJ2Q3B8Q0FT:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:57354/favicon.ico   (ca22a1cb)
+2018-12-15T23:04:46.1839998+02:00 0HLJ2Q3B8Q0FT:00000009 [INF] The file "/favicon.ico" was not modified (f1f8d725)
+2018-12-15T23:04:46.1868959+02:00 0HLJ2Q3B8Q0FT:00000009 [INF] Request finished in 5.6031ms 304 image/x-icon (791a596a)
+2018-12-15T23:05:56.0612806+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Request starting HTTP/1.1 POST http://localhost:57354/admin/users/addtorole application/x-www-form-urlencoded 288 (ca22a1cb)
+2018-12-15T23:05:56.0665883+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (500cc934)
+2018-12-15T23:05:56.0695741+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Route matched with "{area = \"Admin\", action = \"AddToRole\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" (a44c0341)
+2018-12-15T23:05:56.0719642+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:05:56.0992089+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" with arguments (["Eventures.Web.Areas.Admin.Models.Users.AddUserToRoleFormModel"]) - Validation state: Valid (4e3479ed)
+2018-12-15T23:05:56.1028407+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:05:56.1442846+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Executed DbCommand ("38"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T23:05:56.1861275+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Executed DbCommand ("37"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Discriminator], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName], [e].[FirstName], [e].[LastName], [e].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [e]
+WHERE ([e].[Discriminator] = N'User') AND ([e].[Id] = @__get_Item_0)" (0723d8ff)
+2018-12-15T23:05:56.3475785+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Executed DbCommand ("52"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T23:05:56.3983482+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Executed DbCommand ("30"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-12-15T23:05:56.4744659+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Executed DbCommand ("68"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T23:05:56.6221525+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Executed DbCommand ("70"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2018-12-15T23:05:56.6662583+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Executed DbCommand ("28"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)" (0723d8ff)
+2018-12-15T23:05:56.8882244+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Executed DbCommand ("73"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);" (0723d8ff)
+2018-12-15T23:05:56.9708238+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Executed DbCommand ("46"ms) [Parameters=["@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13, [FirstName] = @p14, [LastName] = @p15, [UniqueCitizenNumber] = @p16
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-12-15T23:05:57.0008426+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 898.4573ms. (50a9e262)
+2018-12-15T23:05:57.0038577+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Executing RedirectResult, redirecting to "/admin/users". (d98d540e)
+2018-12-15T23:05:57.0069403+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" in 934.7801ms (afa2e885)
+2018-12-15T23:05:57.0096366+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (99874f2b)
+2018-12-15T23:05:57.0128705+02:00 0HLJ2Q3B8Q0FT:0000000A [INF] Request finished in 951.7404ms 302  (791a596a)
+2018-12-15T23:05:57.0249709+02:00 0HLJ2Q3B8Q0FT:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:57354/admin/users   (ca22a1cb)
+2018-12-15T23:05:57.0288164+02:00 0HLJ2Q3B8Q0FT:0000000B [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T23:05:57.0320674+02:00 0HLJ2Q3B8Q0FT:0000000B [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T23:05:57.0350505+02:00 0HLJ2Q3B8Q0FT:0000000B [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:05:57.0596020+02:00 0HLJ2Q3B8Q0FT:0000000B [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T23:05:57.0632903+02:00 0HLJ2Q3B8Q0FT:0000000B [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:05:57.1005312+02:00 0HLJ2Q3B8Q0FT:0000000B [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoIdentityUser].[Email], [dtoIdentityUser].[Id], [dtoIdentityUser].[UserName]
+FROM [AspNetUsers] AS [dtoIdentityUser]
+WHERE [dtoIdentityUser].[Discriminator] IN (N'User', N'IdentityUser')" (0723d8ff)
+2018-12-15T23:05:57.1307288+02:00 0HLJ2Q3B8Q0FT:0000000B [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name] AS [Value]
+FROM [AspNetRoles] AS [r]" (0723d8ff)
+2018-12-15T23:05:57.1330352+02:00 0HLJ2Q3B8Q0FT:0000000B [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 71.4255ms. (50a9e262)
+2018-12-15T23:05:57.1351891+02:00 0HLJ2Q3B8Q0FT:0000000B [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T23:06:50.6569265+02:00 0HLJ2Q3B8Q0FT:0000000B [INF] Executed ViewResult - view "Index" executed in 53374.3993ms. (f66409e9)
+2018-12-15T23:06:50.6911480+02:00 0HLJ2Q3B8Q0FT:0000000B [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" in 53637.2625ms (afa2e885)
+2018-12-15T23:06:50.7009451+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:57354/admin/users/addtorole application/x-www-form-urlencoded 279 (ca22a1cb)
+2018-12-15T23:06:50.7194068+02:00 0HLJ2Q3B8Q0FT:0000000B [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T23:06:50.7617147+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (500cc934)
+2018-12-15T23:06:50.8258525+02:00 0HLJ2Q3B8Q0FT:0000000B [INF] Request finished in 53735.0504ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T23:06:50.8421384+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Route matched with "{area = \"Admin\", action = \"AddToRole\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" (a44c0341)
+2018-12-15T23:06:50.8666346+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:06:50.9318502+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" with arguments (["Eventures.Web.Areas.Admin.Models.Users.AddUserToRoleFormModel"]) - Validation state: Valid (4e3479ed)
+2018-12-15T23:06:50.9359774+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:06:51.0184026+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Executed DbCommand ("59"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T23:06:51.0808278+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Executed DbCommand ("57"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Discriminator], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName], [e].[FirstName], [e].[LastName], [e].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [e]
+WHERE ([e].[Discriminator] = N'User') AND ([e].[Id] = @__get_Item_0)" (0723d8ff)
+2018-12-15T23:06:51.1429540+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Executed DbCommand ("37"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T23:06:51.2082213+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Executed DbCommand ("60"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-12-15T23:06:51.2609897+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Executed DbCommand ("46"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T23:06:51.3447467+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Executed DbCommand ("33"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2018-12-15T23:06:51.4151901+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Executed DbCommand ("66"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)" (0723d8ff)
+2018-12-15T23:06:51.4639655+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Executed DbCommand ("42"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [AspNetUserRoles]
+WHERE [UserId] = @p0 AND [RoleId] = @p1;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-12-15T23:06:51.4903628+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Executed DbCommand ("22"ms) [Parameters=["@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13, [FirstName] = @p14, [LastName] = @p15, [UniqueCitizenNumber] = @p16
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-12-15T23:06:58.8817991+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 7946.0745ms. (50a9e262)
+2018-12-15T23:06:58.8845254+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Executing RedirectResult, redirecting to "/admin/users". (d98d540e)
+2018-12-15T23:07:00.5498365+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" in 9703.8252ms (afa2e885)
+2018-12-15T23:07:00.5530187+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (99874f2b)
+2018-12-15T23:07:00.5567840+02:00 0HLJ2Q3B8Q0G1:00000001 [INF] Request finished in 9857.4638ms 302  (791a596a)
+2018-12-15T23:07:00.6048381+02:00 0HLJ2Q3B8Q0G1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57354/admin/users   (ca22a1cb)
+2018-12-15T23:07:00.6100640+02:00 0HLJ2Q3B8Q0G1:00000002 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T23:07:00.6139036+02:00 0HLJ2Q3B8Q0G1:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T23:07:00.6178511+02:00 0HLJ2Q3B8Q0G1:00000002 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:07:00.6411411+02:00 0HLJ2Q3B8Q0G1:00000002 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T23:07:00.6461746+02:00 0HLJ2Q3B8Q0G1:00000002 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:07:00.6982326+02:00 0HLJ2Q3B8Q0G1:00000002 [INF] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoIdentityUser].[Email], [dtoIdentityUser].[Id], [dtoIdentityUser].[UserName]
+FROM [AspNetUsers] AS [dtoIdentityUser]
+WHERE [dtoIdentityUser].[Discriminator] IN (N'User', N'IdentityUser')" (0723d8ff)
+2018-12-15T23:07:00.7494152+02:00 0HLJ2Q3B8Q0G1:00000002 [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name] AS [Value]
+FROM [AspNetRoles] AS [r]" (0723d8ff)
+2018-12-15T23:07:00.7531094+02:00 0HLJ2Q3B8Q0G1:00000002 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 108.6102ms. (50a9e262)
+2018-12-15T23:07:00.7569973+02:00 0HLJ2Q3B8Q0G1:00000002 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T23:07:16.7850130+02:00 0HLJ2Q3B8Q0G1:00000002 [INF] Executed ViewResult - view "Index" executed in 16015.1513ms. (f66409e9)
+2018-12-15T23:07:16.7879290+02:00 0HLJ2Q3B8Q0G1:00000002 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" in 16171.2725ms (afa2e885)
+2018-12-15T23:07:16.7908173+02:00 0HLJ2Q3B8Q0G1:00000002 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T23:07:16.7940718+02:00 0HLJ2Q3B8Q0G1:00000002 [INF] Request finished in 16210.0529ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T23:07:29.9190679+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:57354/admin/users/addtorole application/x-www-form-urlencoded 288 (ca22a1cb)
+2018-12-15T23:07:29.9228898+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (500cc934)
+2018-12-15T23:07:29.9268855+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Route matched with "{area = \"Admin\", action = \"AddToRole\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" (a44c0341)
+2018-12-15T23:07:29.9304205+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:07:29.9609666+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" with arguments (["Eventures.Web.Areas.Admin.Models.Users.AddUserToRoleFormModel"]) - Validation state: Valid (4e3479ed)
+2018-12-15T23:07:29.9643376+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:07:30.0059230+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Executed DbCommand ("37"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T23:07:30.0521531+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Executed DbCommand ("41"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Discriminator], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName], [e].[FirstName], [e].[LastName], [e].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [e]
+WHERE ([e].[Discriminator] = N'User') AND ([e].[Id] = @__get_Item_0)" (0723d8ff)
+2018-12-15T23:07:30.0978882+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Executed DbCommand ("42"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T23:07:30.1398339+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Executed DbCommand ("36"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-12-15T23:07:30.1830160+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Executed DbCommand ("40"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T23:07:30.2284982+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Executed DbCommand ("41"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2018-12-15T23:07:30.2724931+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Executed DbCommand ("40"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)" (0723d8ff)
+2018-12-15T23:07:30.3297956+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Executed DbCommand ("52"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);" (0723d8ff)
+2018-12-15T23:07:30.3597546+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Executed DbCommand ("26"ms) [Parameters=["@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13, [FirstName] = @p14, [LastName] = @p15, [UniqueCitizenNumber] = @p16
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-12-15T23:07:33.4649453+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 3500.2303ms. (50a9e262)
+2018-12-15T23:07:33.4983624+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Executing RedirectResult, redirecting to "/admin/users". (d98d540e)
+2018-12-15T23:07:33.5015960+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" in 3571.7921ms (afa2e885)
+2018-12-15T23:07:33.5052080+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (99874f2b)
+2018-12-15T23:07:33.5080864+02:00 0HLJ2Q3B8Q0G1:00000003 [INF] Request finished in 3589.8677ms 302  (791a596a)
+2018-12-15T23:07:33.5178365+02:00 0HLJ2Q3B8Q0G1:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:57354/admin/users   (ca22a1cb)
+2018-12-15T23:07:33.5224863+02:00 0HLJ2Q3B8Q0G1:00000004 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T23:07:33.5254663+02:00 0HLJ2Q3B8Q0G1:00000004 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T23:07:33.5282954+02:00 0HLJ2Q3B8Q0G1:00000004 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:07:33.5547297+02:00 0HLJ2Q3B8Q0G1:00000004 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T23:07:33.5586460+02:00 0HLJ2Q3B8Q0G1:00000004 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:07:33.5951255+02:00 0HLJ2Q3B8Q0G1:00000004 [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoIdentityUser].[Email], [dtoIdentityUser].[Id], [dtoIdentityUser].[UserName]
+FROM [AspNetUsers] AS [dtoIdentityUser]
+WHERE [dtoIdentityUser].[Discriminator] IN (N'User', N'IdentityUser')" (0723d8ff)
+2018-12-15T23:07:33.6366639+02:00 0HLJ2Q3B8Q0G1:00000004 [INF] Executed DbCommand ("37"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name] AS [Value]
+FROM [AspNetRoles] AS [r]" (0723d8ff)
+2018-12-15T23:07:33.6413414+02:00 0HLJ2Q3B8Q0G1:00000004 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 82.4639ms. (50a9e262)
+2018-12-15T23:07:33.6460023+02:00 0HLJ2Q3B8Q0G1:00000004 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T23:07:33.6522566+02:00 0HLJ2Q3B8Q0G1:00000004 [INF] Executed ViewResult - view "Index" executed in 7.3042ms. (f66409e9)
+2018-12-15T23:07:33.6547276+02:00 0HLJ2Q3B8Q0G1:00000004 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" in 126.7637ms (afa2e885)
+2018-12-15T23:07:33.6594585+02:00 0HLJ2Q3B8Q0G1:00000004 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T23:07:33.6631544+02:00 0HLJ2Q3B8Q0G1:00000004 [INF] Request finished in 145.6504ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T23:07:35.3266702+02:00 0HLJ2Q3B8Q0G1:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:57354/admin/users   (ca22a1cb)
+2018-12-15T23:07:35.3298647+02:00 0HLJ2Q3B8Q0G1:00000005 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T23:07:35.3321146+02:00 0HLJ2Q3B8Q0G1:00000005 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T23:07:35.3345047+02:00 0HLJ2Q3B8Q0G1:00000005 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:07:35.3624664+02:00 0HLJ2Q3B8Q0G1:00000005 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T23:07:35.3658200+02:00 0HLJ2Q3B8Q0G1:00000005 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:07:35.4050560+02:00 0HLJ2Q3B8Q0G1:00000005 [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoIdentityUser].[Email], [dtoIdentityUser].[Id], [dtoIdentityUser].[UserName]
+FROM [AspNetUsers] AS [dtoIdentityUser]
+WHERE [dtoIdentityUser].[Discriminator] IN (N'User', N'IdentityUser')" (0723d8ff)
+2018-12-15T23:07:35.4384442+02:00 0HLJ2Q3B8Q0G1:00000005 [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name] AS [Value]
+FROM [AspNetRoles] AS [r]" (0723d8ff)
+2018-12-15T23:07:35.4418614+02:00 0HLJ2Q3B8Q0G1:00000005 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 76.438ms. (50a9e262)
+2018-12-15T23:07:35.4441923+02:00 0HLJ2Q3B8Q0G1:00000005 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T23:07:35.4487466+02:00 0HLJ2Q3B8Q0G1:00000005 [INF] Executed ViewResult - view "Index" executed in 4.2311ms. (f66409e9)
+2018-12-15T23:07:35.4509945+02:00 0HLJ2Q3B8Q0G1:00000005 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" in 116.6885ms (afa2e885)
+2018-12-15T23:07:35.4532910+02:00 0HLJ2Q3B8Q0G1:00000005 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T23:07:35.4566786+02:00 0HLJ2Q3B8Q0G1:00000005 [INF] Request finished in 131.2484ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T23:07:35.5279517+02:00 0HLJ2Q3B8Q0G1:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-12-15T23:07:35.5318829+02:00 0HLJ2Q3B8Q0G1:00000006 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2018-12-15T23:07:35.5361926+02:00 0HLJ2Q3B8Q0G2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/css/site.css   (ca22a1cb)
+2018-12-15T23:07:35.5411633+02:00 0HLJ2Q3B8Q0G1:00000006 [INF] Request finished in 7.7708ms 304 text/css (791a596a)
+2018-12-15T23:07:35.5678876+02:00 0HLJ2Q3B8Q0G2:00000001 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2018-12-15T23:07:35.5721096+02:00 0HLJ2Q3B8Q0G3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-12-15T23:07:35.5750181+02:00 0HLJ2Q3B8Q0G2:00000001 [INF] Request finished in 39.1019ms 304 text/css (791a596a)
+2018-12-15T23:07:35.5764249+02:00 0HLJ2Q3B8Q0G3:00000001 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2018-12-15T23:07:35.5816378+02:00 0HLJ2Q3B8Q0G3:00000001 [INF] Request finished in 35.371ms 304 application/javascript (791a596a)
+2018-12-15T23:07:35.5837976+02:00 0HLJ2Q3B8Q0G4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-12-15T23:07:35.5918619+02:00 0HLJ2Q3B8Q0G5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/js/site.js?v=qJ6sF6fAQn4m-8y39hiFs0CzFE8ldTJ8vZrFRoBAU5U   (ca22a1cb)
+2018-12-15T23:07:35.5931763+02:00 0HLJ2Q3B8Q0G4:00000001 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2018-12-15T23:07:35.5967192+02:00 0HLJ2Q3B8Q0G5:00000001 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2018-12-15T23:07:35.6000385+02:00 0HLJ2Q3B8Q0G4:00000001 [INF] Request finished in 14.8408ms 304 application/javascript (791a596a)
+2018-12-15T23:07:35.6023188+02:00 0HLJ2Q3B8Q0G5:00000001 [INF] Request finished in 11.4903ms 304 application/javascript (791a596a)
+2018-12-15T23:07:35.6551061+02:00 0HLJ2Q3B8Q0G2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57354/favicon.ico   (ca22a1cb)
+2018-12-15T23:07:35.6578723+02:00 0HLJ2Q3B8Q0G2:00000002 [INF] The file "/favicon.ico" was not modified (f1f8d725)
+2018-12-15T23:07:35.6603991+02:00 0HLJ2Q3B8Q0G2:00000002 [INF] Request finished in 5.8453ms 304 image/x-icon (791a596a)
+2018-12-15T23:07:39.2602991+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:57354/admin/users/addtorole application/x-www-form-urlencoded 288 (ca22a1cb)
+2018-12-15T23:07:39.2636323+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (500cc934)
+2018-12-15T23:07:39.2659362+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Route matched with "{area = \"Admin\", action = \"AddToRole\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" (a44c0341)
+2018-12-15T23:07:39.2692323+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:07:39.3018015+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" with arguments (["Eventures.Web.Areas.Admin.Models.Users.AddUserToRoleFormModel"]) - Validation state: Valid (4e3479ed)
+2018-12-15T23:07:39.3077693+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:07:39.3500883+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Executed DbCommand ("39"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T23:07:39.3952967+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Executed DbCommand ("40"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Discriminator], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName], [e].[FirstName], [e].[LastName], [e].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [e]
+WHERE ([e].[Discriminator] = N'User') AND ([e].[Id] = @__get_Item_0)" (0723d8ff)
+2018-12-15T23:07:39.4882199+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Executed DbCommand ("89"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T23:07:39.5346428+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Executed DbCommand ("41"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-12-15T23:07:39.5810748+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Executed DbCommand ("43"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T23:07:39.6298317+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Executed DbCommand ("45"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2018-12-15T23:07:39.6813639+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Executed DbCommand ("47"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)" (0723d8ff)
+2018-12-15T23:07:39.7081179+02:00 0HLJ2Q3B8Q0G1:00000007 [WRN] User "c6a671df-b8ba-44c2-a27d-7526e1f31bda" validation failed: "DuplicateEmail". (5dc28e15)
+2018-12-15T23:07:39.7111179+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 406.6319ms. (50a9e262)
+2018-12-15T23:07:39.7144424+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Executing RedirectResult, redirecting to "/admin/users". (d98d540e)
+2018-12-15T23:07:39.7176404+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" in 448.8099ms (afa2e885)
+2018-12-15T23:07:39.7216573+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (99874f2b)
+2018-12-15T23:07:39.7263420+02:00 0HLJ2Q3B8Q0G1:00000007 [INF] Request finished in 465.4617ms 302  (791a596a)
+2018-12-15T23:07:39.7382322+02:00 0HLJ2Q3B8Q0G1:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:57354/admin/users   (ca22a1cb)
+2018-12-15T23:07:39.7440380+02:00 0HLJ2Q3B8Q0G1:00000008 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T23:07:39.7466912+02:00 0HLJ2Q3B8Q0G1:00000008 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T23:07:39.7494385+02:00 0HLJ2Q3B8Q0G1:00000008 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:07:39.7754407+02:00 0HLJ2Q3B8Q0G1:00000008 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T23:07:39.7798911+02:00 0HLJ2Q3B8Q0G1:00000008 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:07:39.8165393+02:00 0HLJ2Q3B8Q0G1:00000008 [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoIdentityUser].[Email], [dtoIdentityUser].[Id], [dtoIdentityUser].[UserName]
+FROM [AspNetUsers] AS [dtoIdentityUser]
+WHERE [dtoIdentityUser].[Discriminator] IN (N'User', N'IdentityUser')" (0723d8ff)
+2018-12-15T23:07:39.8573420+02:00 0HLJ2Q3B8Q0G1:00000008 [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name] AS [Value]
+FROM [AspNetRoles] AS [r]" (0723d8ff)
+2018-12-15T23:07:39.8615076+02:00 0HLJ2Q3B8Q0G1:00000008 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 82.3596ms. (50a9e262)
+2018-12-15T23:07:39.8638965+02:00 0HLJ2Q3B8Q0G1:00000008 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T23:07:39.8699382+02:00 0HLJ2Q3B8Q0G1:00000008 [INF] Executed ViewResult - view "Index" executed in 4.8367ms. (f66409e9)
+2018-12-15T23:07:39.8748124+02:00 0HLJ2Q3B8Q0G1:00000008 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" in 123.559ms (afa2e885)
+2018-12-15T23:07:39.8785327+02:00 0HLJ2Q3B8Q0G1:00000008 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T23:07:39.8820333+02:00 0HLJ2Q3B8Q0G1:00000008 [INF] Request finished in 145.8254ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T23:08:11.2845117+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Request starting HTTP/1.1 POST http://localhost:57354/admin/users/addtorole application/x-www-form-urlencoded 288 (ca22a1cb)
+2018-12-15T23:08:11.2892413+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (500cc934)
+2018-12-15T23:08:11.2986679+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Route matched with "{area = \"Admin\", action = \"AddToRole\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" (a44c0341)
+2018-12-15T23:08:11.3014981+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:08:11.3326463+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" with arguments (["Eventures.Web.Areas.Admin.Models.Users.AddUserToRoleFormModel"]) - Validation state: Valid (4e3479ed)
+2018-12-15T23:08:11.3379374+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:08:11.3827698+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Executed DbCommand ("42"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T23:08:11.4304027+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Executed DbCommand ("44"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Discriminator], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName], [e].[FirstName], [e].[LastName], [e].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [e]
+WHERE ([e].[Discriminator] = N'User') AND ([e].[Id] = @__get_Item_0)" (0723d8ff)
+2018-12-15T23:08:11.4755878+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Executed DbCommand ("42"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T23:08:11.5279939+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Executed DbCommand ("47"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-12-15T23:08:11.5721314+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Executed DbCommand ("42"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T23:08:11.6172971+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Executed DbCommand ("41"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2018-12-15T23:08:11.6590943+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Executed DbCommand ("39"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)" (0723d8ff)
+2018-12-15T23:08:11.7102796+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Executed DbCommand ("47"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);" (0723d8ff)
+2018-12-15T23:08:11.7362691+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Executed DbCommand ("23"ms) [Parameters=["@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13, [FirstName] = @p14, [LastName] = @p15, [UniqueCitizenNumber] = @p16
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-12-15T23:08:11.7403201+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 404.9715ms. (50a9e262)
+2018-12-15T23:08:11.7429010+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Executing RedirectResult, redirecting to "/admin/users". (d98d540e)
+2018-12-15T23:08:11.7453630+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" in 444.5152ms (afa2e885)
+2018-12-15T23:08:11.7477662+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (99874f2b)
+2018-12-15T23:08:11.7504040+02:00 0HLJ2Q3B8Q0G1:00000009 [INF] Request finished in 466.4403ms 302  (791a596a)
+2018-12-15T23:08:11.7632344+02:00 0HLJ2Q3B8Q0G1:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:57354/admin/users   (ca22a1cb)
+2018-12-15T23:08:11.7697079+02:00 0HLJ2Q3B8Q0G1:0000000A [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T23:08:11.7768399+02:00 0HLJ2Q3B8Q0G1:0000000A [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T23:08:11.7791368+02:00 0HLJ2Q3B8Q0G1:0000000A [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:08:11.8069823+02:00 0HLJ2Q3B8Q0G1:0000000A [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T23:08:11.8097462+02:00 0HLJ2Q3B8Q0G1:0000000A [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:08:11.8446720+02:00 0HLJ2Q3B8Q0G1:0000000A [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoIdentityUser].[Email], [dtoIdentityUser].[Id], [dtoIdentityUser].[UserName]
+FROM [AspNetUsers] AS [dtoIdentityUser]
+WHERE [dtoIdentityUser].[Discriminator] IN (N'User', N'IdentityUser')" (0723d8ff)
+2018-12-15T23:08:11.8762449+02:00 0HLJ2Q3B8Q0G1:0000000A [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name] AS [Value]
+FROM [AspNetRoles] AS [r]" (0723d8ff)
+2018-12-15T23:08:11.8789195+02:00 0HLJ2Q3B8Q0G1:0000000A [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 69.6196ms. (50a9e262)
+2018-12-15T23:08:16.6957659+02:00 0HLJ2Q3B8Q0G1:0000000A [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T23:08:16.7102329+02:00 0HLJ2Q3B8Q0G1:0000000A [INF] Executed ViewResult - view "Index" executed in 4827.7425ms. (f66409e9)
+2018-12-15T23:08:16.7131126+02:00 0HLJ2Q3B8Q0G1:0000000A [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" in 4933.4902ms (afa2e885)
+2018-12-15T23:08:16.7162853+02:00 0HLJ2Q3B8Q0G1:0000000A [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T23:08:16.7203024+02:00 0HLJ2Q3B8Q0G1:0000000A [INF] Request finished in 4955.3466ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T23:08:22.8836065+02:00 0HLJ2Q3B8Q0G3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2018-12-15T23:08:22.8873233+02:00 0HLJ2Q3B8Q0G3:00000002 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css.map" was not modified (f1f8d725)
+2018-12-15T23:08:22.8909519+02:00 0HLJ2Q3B8Q0G3:00000002 [INF] Request finished in 6.7571ms 304 text/plain (791a596a)
+2018-12-15T23:08:55.8572413+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Request starting HTTP/1.1 POST http://localhost:57354/admin/users/addtorole application/x-www-form-urlencoded 279 (ca22a1cb)
+2018-12-15T23:08:55.8618141+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (500cc934)
+2018-12-15T23:08:55.8639273+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Route matched with "{area = \"Admin\", action = \"AddToRole\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" (a44c0341)
+2018-12-15T23:08:55.8663229+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:08:55.8944221+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" with arguments (["Eventures.Web.Areas.Admin.Models.Users.AddUserToRoleFormModel"]) - Validation state: Valid (4e3479ed)
+2018-12-15T23:08:55.8969098+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:08:55.9394958+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Executed DbCommand ("39"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T23:08:55.9868222+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Executed DbCommand ("43"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Discriminator], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName], [e].[FirstName], [e].[LastName], [e].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [e]
+WHERE ([e].[Discriminator] = N'User') AND ([e].[Id] = @__get_Item_0)" (0723d8ff)
+2018-12-15T23:09:07.6895196+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Executed DbCommand ("38"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T23:09:07.7648581+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Executed DbCommand ("44"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-12-15T23:09:07.8066311+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Executed DbCommand ("37"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T23:09:07.8532179+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Executed DbCommand ("43"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2018-12-15T23:09:07.9007471+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Executed DbCommand ("44"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)" (0723d8ff)
+2018-12-15T23:09:07.9436491+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Executed DbCommand ("39"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [AspNetUserRoles]
+WHERE [UserId] = @p0 AND [RoleId] = @p1;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-12-15T23:09:07.9677590+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Executed DbCommand ("21"ms) [Parameters=["@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13, [FirstName] = @p14, [LastName] = @p15, [UniqueCitizenNumber] = @p16
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-12-15T23:09:24.7239377+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 28826.6197ms. (50a9e262)
+2018-12-15T23:09:24.7257518+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Executing RedirectResult, redirecting to "/admin/users". (d98d540e)
+2018-12-15T23:09:25.5647133+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" in 29698.5274ms (afa2e885)
+2018-12-15T23:09:25.5672472+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (99874f2b)
+2018-12-15T23:09:25.5703248+02:00 0HLJ2Q3B8Q0G1:0000000B [INF] Request finished in 29713.2146ms 302  (791a596a)
+2018-12-15T23:09:25.6237793+02:00 0HLJ2Q3B8Q0G1:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:57354/admin/users   (ca22a1cb)
+2018-12-15T23:09:25.6273763+02:00 0HLJ2Q3B8Q0G1:0000000C [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T23:09:25.6304760+02:00 0HLJ2Q3B8Q0G1:0000000C [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T23:09:25.6333434+02:00 0HLJ2Q3B8Q0G1:0000000C [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:09:25.6562206+02:00 0HLJ2Q3B8Q0G1:0000000C [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T23:09:25.6597670+02:00 0HLJ2Q3B8Q0G1:0000000C [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:09:25.6944843+02:00 0HLJ2Q3B8Q0G1:0000000C [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoIdentityUser].[Email], [dtoIdentityUser].[Id], [dtoIdentityUser].[UserName]
+FROM [AspNetUsers] AS [dtoIdentityUser]
+WHERE [dtoIdentityUser].[Discriminator] IN (N'User', N'IdentityUser')" (0723d8ff)
+2018-12-15T23:09:29.2904763+02:00 0HLJ2Q3B8Q0G1:0000000C [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name] AS [Value]
+FROM [AspNetRoles] AS [r]" (0723d8ff)
+2018-12-15T23:09:29.2947086+02:00 0HLJ2Q3B8Q0G1:0000000C [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 3634.6262ms. (50a9e262)
+2018-12-15T23:09:29.2979643+02:00 0HLJ2Q3B8Q0G1:0000000C [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T23:09:29.3039802+02:00 0HLJ2Q3B8Q0G1:0000000C [INF] Executed ViewResult - view "Index" executed in 6.8167ms. (f66409e9)
+2018-12-15T23:09:29.3072051+02:00 0HLJ2Q3B8Q0G1:0000000C [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" in 3673.5504ms (afa2e885)
+2018-12-15T23:09:29.3094554+02:00 0HLJ2Q3B8Q0G1:0000000C [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T23:09:29.3127107+02:00 0HLJ2Q3B8Q0G1:0000000C [INF] Request finished in 3711.4435ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T23:10:00.7968253+02:00 0HLJ2Q3B8Q0G3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2018-12-15T23:10:00.8007289+02:00 0HLJ2Q3B8Q0G3:00000003 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css.map" was not modified (f1f8d725)
+2018-12-15T23:10:00.8033663+02:00 0HLJ2Q3B8Q0G3:00000003 [INF] Request finished in 6.5339ms 304 text/plain (791a596a)
+2018-12-15T23:10:32.0623603+02:00 0HLJ2Q3B8Q0G1:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:57354/admin/users   (ca22a1cb)
+2018-12-15T23:10:32.0661197+02:00 0HLJ2Q3B8Q0G1:0000000D [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T23:10:32.0732649+02:00 0HLJ2Q3B8Q0G1:0000000D [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T23:10:32.0758572+02:00 0HLJ2Q3B8Q0G1:0000000D [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:10:32.1021051+02:00 0HLJ2Q3B8Q0G1:0000000D [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T23:10:32.1055634+02:00 0HLJ2Q3B8Q0G1:0000000D [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:10:32.1416412+02:00 0HLJ2Q3B8Q0G1:0000000D [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoIdentityUser].[Email], [dtoIdentityUser].[Id], [dtoIdentityUser].[UserName]
+FROM [AspNetUsers] AS [dtoIdentityUser]
+WHERE [dtoIdentityUser].[Discriminator] IN (N'User', N'IdentityUser')" (0723d8ff)
+2018-12-15T23:10:32.1746712+02:00 0HLJ2Q3B8Q0G1:0000000D [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name] AS [Value]
+FROM [AspNetRoles] AS [r]" (0723d8ff)
+2018-12-15T23:10:32.1787371+02:00 0HLJ2Q3B8Q0G1:0000000D [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 72.826ms. (50a9e262)
+2018-12-15T23:10:32.3667496+02:00 0HLJ2Q3B8Q0G1:0000000D [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T23:10:32.3831885+02:00 0HLJ2Q3B8Q0G1:0000000D [INF] Executed ViewResult - view "Index" executed in 201.691ms. (f66409e9)
+2018-12-15T23:10:32.3862779+02:00 0HLJ2Q3B8Q0G1:0000000D [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" in 309.9711ms (afa2e885)
+2018-12-15T23:10:32.3890247+02:00 0HLJ2Q3B8Q0G1:0000000D [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T23:10:32.3957159+02:00 0HLJ2Q3B8Q0G1:0000000D [INF] Request finished in 330.2693ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T23:10:32.5243720+02:00 0HLJ2Q3B8Q0G3:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-12-15T23:10:32.5266306+02:00 0HLJ2Q3B8Q0G6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-12-15T23:10:32.5289310+02:00 0HLJ2Q3B8Q0G1:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:57354/css/site.css   (ca22a1cb)
+2018-12-15T23:10:32.5315843+02:00 0HLJ2Q3B8Q0G3:00000004 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2018-12-15T23:10:32.5354010+02:00 0HLJ2Q3B8Q0G6:00000001 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2018-12-15T23:10:32.5525099+02:00 0HLJ2Q3B8Q0G3:00000004 [INF] Request finished in 10.7239ms 304 text/css (791a596a)
+2018-12-15T23:10:32.5703532+02:00 0HLJ2Q3B8Q0G6:00000001 [INF] Request finished in 14.5872ms 304 application/javascript (791a596a)
+2018-12-15T23:10:32.5863125+02:00 0HLJ2Q3B8Q0G1:0000000E [INF] The file "/css/site.css" was not modified (f1f8d725)
+2018-12-15T23:10:32.5894054+02:00 0HLJ2Q3B8Q0G7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-12-15T23:10:32.5918829+02:00 0HLJ2Q3B8Q0G1:0000000E [INF] Request finished in 65.3076ms 304 text/css (791a596a)
+2018-12-15T23:10:32.5932727+02:00 0HLJ2Q3B8Q0G7:00000001 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2018-12-15T23:10:32.6004292+02:00 0HLJ2Q3B8Q0G7:00000001 [INF] Request finished in 57.9365ms 304 application/javascript (791a596a)
+2018-12-15T23:10:32.6017653+02:00 0HLJ2Q3B8Q0G8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/js/site.js?v=qJ6sF6fAQn4m-8y39hiFs0CzFE8ldTJ8vZrFRoBAU5U   (ca22a1cb)
+2018-12-15T23:10:32.6049266+02:00 0HLJ2Q3B8Q0G8:00000001 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2018-12-15T23:10:32.6085280+02:00 0HLJ2Q3B8Q0G8:00000001 [INF] Request finished in 9.099ms 304 application/javascript (791a596a)
+2018-12-15T23:10:32.6734749+02:00 0HLJ2Q3B8Q0G3:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:57354/favicon.ico   (ca22a1cb)
+2018-12-15T23:10:32.6761976+02:00 0HLJ2Q3B8Q0G3:00000005 [INF] The file "/favicon.ico" was not modified (f1f8d725)
+2018-12-15T23:10:32.6813054+02:00 0HLJ2Q3B8Q0G3:00000005 [INF] Request finished in 5.0125ms 304 image/x-icon (791a596a)
+2018-12-15T23:12:14.1757287+02:00  [WRN] No type was specified for the decimal column '"TicketPrice"' on entity type '"Event"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2018-12-15T23:12:14.2358353+02:00  [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:12:14.6762151+02:00  [INF] Executed DbCommand ("109"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2018-12-15T23:12:14.6951037+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2018-12-15T23:12:14.7332924+02:00  [INF] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-12-15T23:12:14.7427074+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-12-15T23:12:14.9723838+02:00  [INF] Executed DbCommand ("77"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T23:12:15.0910366+02:00  [INF] Executed DbCommand ("63"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T23:12:15.1495472+02:00  [INF] Executed DbCommand ("41"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)" (0723d8ff)
+2018-12-15T23:12:17.7158429+02:00 0HLJ2Q7UOBB11:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/   (ca22a1cb)
+2018-12-15T23:12:17.7295045+02:00 0HLJ2Q7UOBB11:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2018-12-15T23:12:17.8857631+02:00 0HLJ2Q7UOBB11:00000001 [INF] Executing endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T23:12:17.9108578+02:00 0HLJ2Q7UOBB11:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\", page = \"\"}". Executing action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T23:12:18.0000042+02:00 0HLJ2Q7UOBB11:00000001 [INF] Executing action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T23:12:18.0069395+02:00 0HLJ2Q7UOBB11:00000001 [INF] Executed action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.5933ms. (50a9e262)
+2018-12-15T23:12:18.0463888+02:00 0HLJ2Q7UOBB11:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T23:12:18.2461848+02:00 0HLJ2Q7UOBB11:00000001 [INF] Executed ViewResult - view "Index" executed in 226.6629ms. (f66409e9)
+2018-12-15T23:12:18.2497542+02:00 0HLJ2Q7UOBB11:00000001 [INF] Executed action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" in 335.5307ms (afa2e885)
+2018-12-15T23:12:18.2527226+02:00 0HLJ2Q7UOBB11:00000001 [INF] Executed endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T23:12:18.2651157+02:00 0HLJ2Q7UOBB11:00000001 [INF] Request finished in 550.0795ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T23:12:20.4047921+02:00 0HLJ2Q7UOBB11:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57354/admin/users   (ca22a1cb)
+2018-12-15T23:12:20.4428313+02:00 0HLJ2Q7UOBB11:00000002 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T23:12:20.4519469+02:00 0HLJ2Q7UOBB11:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T23:12:20.4668795+02:00 0HLJ2Q7UOBB11:00000002 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:12:20.4945405+02:00 0HLJ2Q7UOBB11:00000002 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T23:12:20.5619688+02:00 0HLJ2Q7UOBB11:00000002 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:12:20.7857675+02:00 0HLJ2Q7UOBB11:00000002 [INF] Executed DbCommand ("62"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoIdentityUser].[Email], [dtoIdentityUser].[Id], [dtoIdentityUser].[UserName]
+FROM [AspNetUsers] AS [dtoIdentityUser]
+WHERE [dtoIdentityUser].[Discriminator] IN (N'User', N'IdentityUser')" (0723d8ff)
+2018-12-15T23:12:20.8307777+02:00 0HLJ2Q7UOBB11:00000002 [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name] AS [Value]
+FROM [AspNetRoles] AS [r]" (0723d8ff)
+2018-12-15T23:12:20.8383570+02:00 0HLJ2Q7UOBB11:00000002 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 340.9937ms. (50a9e262)
+2018-12-15T23:12:20.9097643+02:00 0HLJ2Q7UOBB11:00000002 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T23:12:20.9481465+02:00 0HLJ2Q7UOBB11:00000002 [INF] Executed ViewResult - view "Index" executed in 86.3217ms. (f66409e9)
+2018-12-15T23:12:20.9546078+02:00 0HLJ2Q7UOBB11:00000002 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" in 500.3701ms (afa2e885)
+2018-12-15T23:12:20.9596009+02:00 0HLJ2Q7UOBB11:00000002 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T23:12:20.9751991+02:00 0HLJ2Q7UOBB11:00000002 [INF] Request finished in 569.7717ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T23:12:23.9739630+02:00 0HLJ2Q7UOBB11:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:57354/admin/users/addtorole application/x-www-form-urlencoded 279 (ca22a1cb)
+2018-12-15T23:12:23.9807880+02:00 0HLJ2Q7UOBB11:00000003 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (500cc934)
+2018-12-15T23:12:23.9996645+02:00 0HLJ2Q7UOBB11:00000003 [INF] Route matched with "{area = \"Admin\", action = \"AddToRole\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" (a44c0341)
+2018-12-15T23:12:24.0029047+02:00 0HLJ2Q7UOBB11:00000003 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:12:24.0832211+02:00 0HLJ2Q7UOBB11:00000003 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" with arguments (["Eventures.Web.Areas.Admin.Models.Users.AddUserToRoleFormModel"]) - Validation state: Valid (4e3479ed)
+2018-12-15T23:12:24.0875443+02:00 0HLJ2Q7UOBB11:00000003 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:12:24.1293387+02:00 0HLJ2Q7UOBB11:00000003 [INF] Executed DbCommand ("38"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T23:12:24.1874289+02:00 0HLJ2Q7UOBB11:00000003 [INF] Executed DbCommand ("40"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Discriminator], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName], [e].[FirstName], [e].[LastName], [e].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [e]
+WHERE ([e].[Discriminator] = N'User') AND ([e].[Id] = @__get_Item_0)" (0723d8ff)
+2018-12-15T23:12:24.2506201+02:00 0HLJ2Q7UOBB11:00000003 [INF] Executed DbCommand ("48"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T23:12:24.3091422+02:00 0HLJ2Q7UOBB11:00000003 [INF] Executed DbCommand ("39"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-12-15T23:12:24.3180571+02:00 0HLJ2Q7UOBB11:00000003 [WRN] User "678914a5-4223-4b06-9725-b67aba8b0bae" is not in role "Administrator". (ef7b5e72)
+2018-12-15T23:12:24.3224822+02:00 0HLJ2Q7UOBB11:00000003 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 236.1436ms. (50a9e262)
+2018-12-15T23:12:24.3269618+02:00 0HLJ2Q7UOBB11:00000003 [INF] Executing RedirectResult, redirecting to "/admin/users". (d98d540e)
+2018-12-15T23:12:24.4078632+02:00 0HLJ2Q7UOBB11:00000003 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" in 404.2153ms (afa2e885)
+2018-12-15T23:12:24.4106394+02:00 0HLJ2Q7UOBB11:00000003 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (99874f2b)
+2018-12-15T23:12:24.4156294+02:00 0HLJ2Q7UOBB11:00000003 [INF] Request finished in 441.5759ms 302  (791a596a)
+2018-12-15T23:12:24.4327474+02:00 0HLJ2Q7UOBB11:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:57354/admin/users   (ca22a1cb)
+2018-12-15T23:12:24.4362492+02:00 0HLJ2Q7UOBB11:00000004 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T23:12:24.4386685+02:00 0HLJ2Q7UOBB11:00000004 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T23:12:24.4419377+02:00 0HLJ2Q7UOBB11:00000004 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:12:24.4714867+02:00 0HLJ2Q7UOBB11:00000004 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T23:12:24.4750767+02:00 0HLJ2Q7UOBB11:00000004 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:12:24.5100633+02:00 0HLJ2Q7UOBB11:00000004 [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoIdentityUser].[Email], [dtoIdentityUser].[Id], [dtoIdentityUser].[UserName]
+FROM [AspNetUsers] AS [dtoIdentityUser]
+WHERE [dtoIdentityUser].[Discriminator] IN (N'User', N'IdentityUser')" (0723d8ff)
+2018-12-15T23:12:24.5447236+02:00 0HLJ2Q7UOBB11:00000004 [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name] AS [Value]
+FROM [AspNetRoles] AS [r]" (0723d8ff)
+2018-12-15T23:12:24.5481480+02:00 0HLJ2Q7UOBB11:00000004 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 73.6437ms. (50a9e262)
+2018-12-15T23:12:24.5510679+02:00 0HLJ2Q7UOBB11:00000004 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T23:12:24.5568911+02:00 0HLJ2Q7UOBB11:00000004 [INF] Executed ViewResult - view "Index" executed in 5.0236ms. (f66409e9)
+2018-12-15T23:12:24.5608152+02:00 0HLJ2Q7UOBB11:00000004 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" in 118.5448ms (afa2e885)
+2018-12-15T23:12:24.5634108+02:00 0HLJ2Q7UOBB11:00000004 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T23:12:24.5671564+02:00 0HLJ2Q7UOBB11:00000004 [INF] Request finished in 134.241ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-15T23:12:28.0513602+02:00 0HLJ2Q7UOBB11:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:57354/admin/users/addtorole application/x-www-form-urlencoded 288 (ca22a1cb)
+2018-12-15T23:12:28.0562480+02:00 0HLJ2Q7UOBB11:00000005 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (500cc934)
+2018-12-15T23:12:28.0603361+02:00 0HLJ2Q7UOBB11:00000005 [INF] Route matched with "{area = \"Admin\", action = \"AddToRole\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" (a44c0341)
+2018-12-15T23:12:28.0640428+02:00 0HLJ2Q7UOBB11:00000005 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:12:28.0936946+02:00 0HLJ2Q7UOBB11:00000005 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" with arguments (["Eventures.Web.Areas.Admin.Models.Users.AddUserToRoleFormModel"]) - Validation state: Valid (4e3479ed)
+2018-12-15T23:12:28.0978822+02:00 0HLJ2Q7UOBB11:00000005 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:12:28.1396920+02:00 0HLJ2Q7UOBB11:00000005 [INF] Executed DbCommand ("38"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-15T23:12:28.1862050+02:00 0HLJ2Q7UOBB11:00000005 [INF] Executed DbCommand ("41"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Discriminator], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName], [e].[FirstName], [e].[LastName], [e].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [e]
+WHERE ([e].[Discriminator] = N'User') AND ([e].[Id] = @__get_Item_0)" (0723d8ff)
+2018-12-15T23:12:28.2344174+02:00 0HLJ2Q7UOBB11:00000005 [INF] Executed DbCommand ("43"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T23:12:28.2821669+02:00 0HLJ2Q7UOBB11:00000005 [INF] Executed DbCommand ("43"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-12-15T23:12:28.3325531+02:00 0HLJ2Q7UOBB11:00000005 [INF] Executed DbCommand ("44"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-12-15T23:12:28.4031850+02:00 0HLJ2Q7UOBB11:00000005 [INF] Executed DbCommand ("35"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2018-12-15T23:12:28.4438273+02:00 0HLJ2Q7UOBB11:00000005 [INF] Executed DbCommand ("25"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)" (0723d8ff)
+2018-12-15T23:12:28.5320090+02:00 0HLJ2Q7UOBB11:00000005 [INF] Executed DbCommand ("33"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);" (0723d8ff)
+2018-12-15T23:12:28.6234337+02:00 0HLJ2Q7UOBB11:00000005 [INF] Executed DbCommand ("66"ms) [Parameters=["@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13, [FirstName] = @p14, [LastName] = @p15, [UniqueCitizenNumber] = @p16
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-12-15T23:12:28.6434368+02:00 0HLJ2Q7UOBB11:00000005 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 545.3692ms. (50a9e262)
+2018-12-15T23:12:28.6467130+02:00 0HLJ2Q7UOBB11:00000005 [INF] Executing RedirectResult, redirecting to "/admin/users". (d98d540e)
+2018-12-15T23:12:28.6509173+02:00 0HLJ2Q7UOBB11:00000005 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)" in 586.6808ms (afa2e885)
+2018-12-15T23:12:28.6532493+02:00 0HLJ2Q7UOBB11:00000005 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.AddToRole (Eventures.Web)"' (99874f2b)
+2018-12-15T23:12:28.6571680+02:00 0HLJ2Q7UOBB11:00000005 [INF] Request finished in 604.7916ms 302  (791a596a)
+2018-12-15T23:12:28.6740003+02:00 0HLJ2Q7UOBB11:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:57354/admin/users   (ca22a1cb)
+2018-12-15T23:12:28.6781358+02:00 0HLJ2Q7UOBB11:00000006 [INF] Executing endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (500cc934)
+2018-12-15T23:12:28.6810229+02:00 0HLJ2Q7UOBB11:00000006 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\", page = \"\"}". Executing action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" (a44c0341)
+2018-12-15T23:12:28.6836521+02:00 0HLJ2Q7UOBB11:00000006 [INF] Authorization was successful. (0d575a54)
+2018-12-15T23:12:28.7071120+02:00 0HLJ2Q7UOBB11:00000006 [INF] Executing action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-15T23:12:28.7108457+02:00 0HLJ2Q7UOBB11:00000006 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-15T23:12:28.7455286+02:00 0HLJ2Q7UOBB11:00000006 [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoIdentityUser].[Email], [dtoIdentityUser].[Id], [dtoIdentityUser].[UserName]
+FROM [AspNetUsers] AS [dtoIdentityUser]
+WHERE [dtoIdentityUser].[Discriminator] IN (N'User', N'IdentityUser')" (0723d8ff)
+2018-12-15T23:12:28.7781926+02:00 0HLJ2Q7UOBB11:00000006 [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name] AS [Value]
+FROM [AspNetRoles] AS [r]" (0723d8ff)
+2018-12-15T23:12:28.7816198+02:00 0HLJ2Q7UOBB11:00000006 [INF] Executed action method "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 71.5021ms. (50a9e262)
+2018-12-15T23:12:28.7843537+02:00 0HLJ2Q7UOBB11:00000006 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-15T23:12:28.7894206+02:00 0HLJ2Q7UOBB11:00000006 [INF] Executed ViewResult - view "Index" executed in 4.7122ms. (f66409e9)
+2018-12-15T23:12:28.7930374+02:00 0HLJ2Q7UOBB11:00000006 [INF] Executed action "Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)" in 108.6644ms (afa2e885)
+2018-12-15T23:12:28.7957314+02:00 0HLJ2Q7UOBB11:00000006 [INF] Executed endpoint '"Eventures.Web.Areas.Admin.Controllers.UsersController.Index (Eventures.Web)"' (99874f2b)
+2018-12-15T23:12:28.7992732+02:00 0HLJ2Q7UOBB11:00000006 [INF] Request finished in 126.5097ms 200 text/html; charset=utf-8 (791a596a)

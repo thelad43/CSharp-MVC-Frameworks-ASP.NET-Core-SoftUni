@@ -157,7 +157,7 @@
         {
             return string.Format(
                 AuthenticatorUriFormat,
-                urlEncoder.Encode("Chushka.Web"),
+                urlEncoder.Encode("Eventures.Web"),
                 urlEncoder.Encode(email),
                 unformattedKey);
         }

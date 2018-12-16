@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 
-[assembly: HostingStartup(typeof(Chushka.Web.Areas.Identity.IdentityHostingStartup))]
+[assembly: HostingStartup(typeof(Eventures.Web.Areas.Identity.IdentityHostingStartup))]
 
-namespace Chushka.Web.Areas.Identity
+namespace Eventures.Web.Areas.Identity
 {
     public class IdentityHostingStartup : IHostingStartup
     {
