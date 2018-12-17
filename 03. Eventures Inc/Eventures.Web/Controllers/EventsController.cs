@@ -25,6 +25,7 @@
             this.userManager = userManager;
         }
 
+        [HttpGet]
         public async Task<IActionResult> All(int pageNumber = 1)
             => View(new AllEventsListingViewModel
             {
