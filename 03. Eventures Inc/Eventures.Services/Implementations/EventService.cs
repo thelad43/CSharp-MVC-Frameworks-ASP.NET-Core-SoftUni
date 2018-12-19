@@ -21,6 +21,7 @@
             this.db = db;
         }
 
+        // Tested
         public async Task<IEnumerable<EventServiceModel>> AllAsync(int page = 1)
             => await this.db
                 .Events
