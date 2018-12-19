@@ -32,11 +32,13 @@
                 .ProjectTo<EventServiceModel>()
                 .ToListAsync();
 
+        // Tested
         public async Task<Event> ByIdAsync(int eventId)
             => await this.db
                 .Events
                 .FindAsync(eventId);
 
+        // Tested
         public async Task CreateAsync(string name, string place, DateTime start, DateTime end, int tickets, decimal ticketPrice)
         {
             if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(place))
@@ -63,6 +65,7 @@
             await this.db.SaveChangesAsync();
         }
 
+        // Tested
         public async Task<int> TotalAsync()
             => await this.db
                 .Events
