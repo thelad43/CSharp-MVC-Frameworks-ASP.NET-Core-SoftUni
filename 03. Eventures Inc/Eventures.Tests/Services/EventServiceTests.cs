@@ -6,7 +6,6 @@
     using Eventures.Models;
     using Eventures.Services.Implementations;
     using Eventures.Services.Models.Events;
-    using Microsoft.EntityFrameworkCore;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -42,7 +41,7 @@
         [Fact]
         public async Task AllAsyncShouldReturn10EventsFromPage1()
         {
-            using (var db = new EventuresDbContext(this.GetDbOptions()))
+            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
             {
                 var events = new EventService(db);
 
@@ -63,7 +62,7 @@
 
                 await db.SaveChangesAsync();
 
-                var eventsFromPageOne = await events.AllAsync(1);
+                var eventsFromPageOne = await events.AllAsync();
 
                 Assert.Equal(10, eventsFromPageOne.Count());
             }
@@ -72,7 +71,7 @@
         [Fact]
         public async Task AllAsyncShouldReturnOnlyEventsThatHaveMoreThan1Ticket()
         {
-            using (var db = new EventuresDbContext(this.GetDbOptions()))
+            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
             {
                 var events = new EventService(db);
 
@@ -93,7 +92,7 @@
 
                 await db.SaveChangesAsync();
 
-                var eventsFromPageOne = await events.AllAsync(1);
+                var eventsFromPageOne = await events.AllAsync();
 
                 Assert.Equal(8, eventsFromPageOne.Count());
             }
@@ -102,7 +101,7 @@
         [Fact]
         public async Task AllAsyncShouldReturnEventsInDescendingOrderByStartDate()
         {
-            using (var db = new EventuresDbContext(this.GetDbOptions()))
+            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
             {
                 var events = new EventService(db);
 
@@ -123,7 +122,7 @@
 
                 await db.SaveChangesAsync();
 
-                var eventsFromPageOne = await events.AllAsync(1);
+                var eventsFromPageOne = await events.AllAsync();
 
                 var expectedStartDates = new List<DateTime>();
                 var actualStartDates = new List<DateTime>();
@@ -143,7 +142,7 @@
         [Fact]
         public async Task AllAsyncShouldReturnOnlyTheEventsLocatedAtTheGivenPage()
         {
-            using (var db = new EventuresDbContext(this.GetDbOptions()))
+            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
             {
                 var events = new EventService(db);
 
@@ -159,7 +158,7 @@
 
                 await db.SaveChangesAsync();
 
-                var eventsFromPageTwo = await events.AllAsync(1);
+                var eventsFromPageTwo = await events.AllAsync();
 
                 var expectedEvents = new List<EventServiceModel>();
 
@@ -178,7 +177,7 @@
         [Fact]
         public async Task ByIdAsyncShoulReturnCorrectEvent()
         {
-            using (var db = new EventuresDbContext(this.GetDbOptions()))
+            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
             {
                 var events = new EventService(db);
 
@@ -209,7 +208,7 @@
         [Fact]
         public async Task CreateAsyncShouldCreateSuccessfullyEventAndAddItToDb()
         {
-            using (var db = new EventuresDbContext(this.GetDbOptions()))
+            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
             {
                 var events = new EventService(db);
 
@@ -240,7 +239,7 @@
         [Fact]
         public async Task CreateAsyncShouldNotCreateEventIfNameIsNullOrWhiteSpace()
         {
-            using (var db = new EventuresDbContext(this.GetDbOptions()))
+            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
             {
                 var events = new EventService(db);
 
@@ -261,7 +260,7 @@
         [Fact]
         public async Task CreateAsyncShouldNotCreateEventIfPlaceIsNullOrWhiteSpace()
         {
-            using (var db = new EventuresDbContext(this.GetDbOptions()))
+            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
             {
                 var events = new EventService(db);
 
@@ -282,7 +281,7 @@
         [Fact]
         public async Task CreateAsyncShouldNotCreateEventIfTicketPriceIsZeroOrLess()
         {
-            using (var db = new EventuresDbContext(this.GetDbOptions()))
+            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
             {
                 var events = new EventService(db);
 
@@ -299,7 +298,7 @@
         [Fact]
         public async Task CreateAsyncShouldNotCreateEventIfTicketsAreZeroOrLess()
         {
-            using (var db = new EventuresDbContext(this.GetDbOptions()))
+            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
             {
                 var events = new EventService(db);
 
@@ -316,7 +315,7 @@
         [Fact]
         public async Task TotalAsyncShouldReturnCorrectCount()
         {
-            using (var db = new EventuresDbContext(this.GetDbOptions()))
+            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
             {
                 var events = new EventService(db);
 
@@ -339,13 +338,6 @@
 
                 Assert.Equal(45, await events.TotalAsync());
             }
-        }
-
-        private DbContextOptions<EventuresDbContext> GetDbOptions()
-        {
-            return new DbContextOptionsBuilder<EventuresDbContext>()
-               .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
-               .Options;
         }
     }
 }

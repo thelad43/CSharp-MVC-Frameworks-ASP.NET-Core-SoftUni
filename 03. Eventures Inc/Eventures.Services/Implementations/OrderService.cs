@@ -22,6 +22,7 @@
             this.db = db;
         }
 
+        // Tested
         public async Task<IEnumerable<AdminEventServiceModel>> AllAsync(int page = 1)
             => await this.db
                 .Orders
@@ -31,6 +32,7 @@
                 .ProjectTo<AdminEventServiceModel>()
                 .ToListAsync();
 
+        // Tested
         public async Task CreateAsync(User user, Event currentEvent, int ticketsCount)
         {
             if (user == null || currentEvent == null || ticketsCount <= 0)
@@ -54,6 +56,7 @@
             await this.db.SaveChangesAsync();
         }
 
+        // Tested
         public async Task<IEnumerable<MyEventServiceModel>> MyAsync(string userId, int page = 1)
             => await this.db
                 .Orders
@@ -64,12 +67,14 @@
                 .ProjectTo<MyEventServiceModel>()
                 .ToListAsync();
 
+        // Tested
         public async Task<int> TotalAsyncByUserId(string userId)
             => await this.db
                 .Orders
                 .Where(o => o.User.Id == userId)
                 .CountAsync();
 
+        // Tested
         public async Task<int> TotalAsync()
             => await this.db
                 .Orders

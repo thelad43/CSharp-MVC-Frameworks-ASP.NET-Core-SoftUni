@@ -6,7 +6,7 @@
     {
         public string EventName { get; set; }
 
-        public string Tickets { get; set; }
+        public int Tickets { get; set; }
 
         public DateTime Start { get; set; }
 

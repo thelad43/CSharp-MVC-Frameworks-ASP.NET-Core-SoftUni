@@ -1,0 +1,133 @@
+2018-12-20T15:05:54.2938217+02:00  [WRN] No type was specified for the decimal column '"TicketPrice"' on entity type '"Event"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2018-12-20T15:05:54.6479203+02:00  [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-20T15:05:59.4862616+02:00  [INF] Executed DbCommand ("798"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2018-12-20T15:05:59.5048580+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2018-12-20T15:05:59.7141990+02:00  [INF] Executed DbCommand ("205"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-12-20T15:05:59.7378027+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-12-20T15:06:00.9517274+02:00  [INF] Executed DbCommand ("690"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-20T15:06:01.2343096+02:00  [INF] Executed DbCommand ("182"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-20T15:06:01.7505341+02:00  [INF] Executed DbCommand ("464"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FirstName], [u].[LastName], [u].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'User') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)" (0723d8ff)
+2018-12-20T15:06:07.4783478+02:00 0HLJ6FFIU00IO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/   (ca22a1cb)
+2018-12-20T15:06:07.6294682+02:00 0HLJ6FFIU00IO:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2018-12-20T15:06:08.2718658+02:00 0HLJ6FFIU00IO:00000001 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-20T15:06:08.4300293+02:00 0HLJ6FFIU00IO:00000001 [INF] Executed DbCommand ("89"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Discriminator], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName], [e].[FirstName], [e].[LastName], [e].[UniqueCitizenNumber]
+FROM [AspNetUsers] AS [e]
+WHERE ([e].[Discriminator] = N'User') AND ([e].[Id] = @__get_Item_0)" (0723d8ff)
+2018-12-20T15:06:08.7653302+02:00 0HLJ6FFIU00IO:00000001 [INF] Executed DbCommand ("134"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-12-20T15:06:09.0842409+02:00 0HLJ6FFIU00IO:00000001 [INF] Executed DbCommand ("128"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-12-20T15:06:09.1397339+02:00 0HLJ6FFIU00IO:00000001 [INF] Executed DbCommand ("34"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-20T15:06:09.1909264+02:00 0HLJ6FFIU00IO:00000001 [INF] Executed DbCommand ("37"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-12-20T15:06:09.2856835+02:00 0HLJ6FFIU00IO:00000001 [INF] Executing endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (500cc934)
+2018-12-20T15:06:09.3392451+02:00 0HLJ6FFIU00IO:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\", page = \"\"}". Executing action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" (a44c0341)
+2018-12-20T15:06:09.6351528+02:00 0HLJ6FFIU00IO:00000001 [INF] Executing action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" - Validation state: Valid (dad538d7)
+2018-12-20T15:06:09.6420304+02:00 0HLJ6FFIU00IO:00000001 [INF] Executed action method "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.7359ms. (50a9e262)
+2018-12-20T15:06:09.7597207+02:00 0HLJ6FFIU00IO:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-20T15:06:10.1704661+02:00 0HLJ6FFIU00IO:00000001 [INF] Executed ViewResult - view "Index" executed in 482.8448ms. (f66409e9)
+2018-12-20T15:06:10.1742268+02:00 0HLJ6FFIU00IO:00000001 [INF] Executed action "Eventures.Web.Controllers.HomeController.Index (Eventures.Web)" in 831.7318ms (afa2e885)
+2018-12-20T15:06:10.1761649+02:00 0HLJ6FFIU00IO:00000001 [INF] Executed endpoint '"Eventures.Web.Controllers.HomeController.Index (Eventures.Web)"' (99874f2b)
+2018-12-20T15:06:10.1977546+02:00 0HLJ6FFIU00IO:00000001 [INF] Request finished in 2719.8157ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-20T15:06:10.2720008+02:00 0HLJ6FFIU00IO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-12-20T15:06:10.2731588+02:00 0HLJ6FFIU00IP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/css/site.css   (ca22a1cb)
+2018-12-20T15:06:10.2760471+02:00 0HLJ6FFIU00IQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-12-20T15:06:10.2812777+02:00 0HLJ6FFIU00IR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57354/js/site.js?v=qJ6sF6fAQn4m-8y39hiFs0CzFE8ldTJ8vZrFRoBAU5U   (ca22a1cb)
+2018-12-20T15:06:10.3130090+02:00 0HLJ6FFIU00IR:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\js\site.js"' (27b0a520)
+2018-12-20T15:06:10.3887072+02:00 0HLJ6FFIU00IR:00000001 [INF] Request finished in 36.8153ms 200 application/javascript (791a596a)
+2018-12-20T15:06:10.3957657+02:00 0HLJ6FFIU00IP:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\css\site.css"' (27b0a520)
+2018-12-20T15:06:10.3978963+02:00 0HLJ6FFIU00IP:00000001 [INF] Request finished in 126.0182ms 200 text/css (791a596a)
+2018-12-20T15:06:10.4109175+02:00 0HLJ6FFIU00IQ:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-12-20T15:06:10.4146497+02:00 0HLJ6FFIU00IQ:00000001 [INF] Request finished in 138.8771ms 200 application/javascript (791a596a)
+2018-12-20T15:06:10.4754267+02:00 0HLJ6FFIU00IO:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-12-20T15:06:10.4793654+02:00 0HLJ6FFIU00IO:00000002 [INF] Request finished in 206.8055ms 200 text/css (791a596a)
+2018-12-20T15:06:10.6507944+02:00 0HLJ6FFIU00IQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-12-20T15:06:10.6822512+02:00 0HLJ6FFIU00IQ:00000002 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2018-12-20T15:06:10.6874305+02:00 0HLJ6FFIU00IQ:00000002 [INF] Request finished in 36.0687ms 304 application/javascript (791a596a)
+2018-12-20T15:06:10.8397022+02:00 0HLJ6FFIU00IQ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:57354/favicon.ico   (ca22a1cb)
+2018-12-20T15:06:11.0595870+02:00 0HLJ6FFIU00IQ:00000003 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\favicon.ico"' (27b0a520)
+2018-12-20T15:06:11.0627744+02:00 0HLJ6FFIU00IQ:00000003 [INF] Request finished in 222.6791ms 200 image/x-icon (791a596a)
+2018-12-20T15:06:16.2029998+02:00 0HLJ6FFIU00IO:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:57354/events/my   (ca22a1cb)
+2018-12-20T15:06:16.2115142+02:00 0HLJ6FFIU00IO:00000003 [INF] Executing endpoint '"Eventures.Web.Controllers.EventsController.My (Eventures.Web)"' (500cc934)
+2018-12-20T15:06:16.2921016+02:00 0HLJ6FFIU00IO:00000003 [INF] Route matched with "{action = \"My\", controller = \"Events\", area = \"\", page = \"\"}". Executing action "Eventures.Web.Controllers.EventsController.My (Eventures.Web)" (a44c0341)
+2018-12-20T15:06:16.3062618+02:00 0HLJ6FFIU00IO:00000003 [INF] Authorization was successful. (0d575a54)
+2018-12-20T15:06:16.3769754+02:00 0HLJ6FFIU00IO:00000003 [INF] Executing action method "Eventures.Web.Controllers.EventsController.My (Eventures.Web)" with arguments (["1"]) - Validation state: Valid (4e3479ed)
+2018-12-20T15:06:18.5713986+02:00 0HLJ6FFIU00IO:00000003 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-20T15:06:19.1110912+02:00 0HLJ6FFIU00IO:00000003 [INF] Executed DbCommand ("249"ms) [Parameters=["@__userId_0='?' (Size = 450), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [o.Event].[Name] AS [EventName], [o].[Tickets]
+FROM [Orders] AS [o]
+INNER JOIN [Events] AS [o.Event] ON [o].[EventId] = [o.Event].[Id]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[OrderedOn] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY" (0723d8ff)
+2018-12-20T15:06:24.2249380+02:00 0HLJ6FFIU00IO:00000003 [INF] Executed DbCommand ("92"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Orders] AS [o]
+WHERE [o].[UserId] = @__userId_0" (0723d8ff)
+2018-12-20T15:06:26.3687328+02:00 0HLJ6FFIU00IO:00000003 [INF] Executed action method "Eventures.Web.Controllers.EventsController.My (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 9989.7927ms. (50a9e262)
+2018-12-20T15:06:26.4209719+02:00 0HLJ6FFIU00IO:00000003 [INF] Executing ViewResult, running view "My". (c83d0e25)
+2018-12-20T15:06:26.4397909+02:00 0HLJ6FFIU00IO:00000003 [INF] Executed ViewResult - view "My" executed in 63.0747ms. (f66409e9)
+2018-12-20T15:06:26.4452894+02:00 0HLJ6FFIU00IO:00000003 [INF] Executed action "Eventures.Web.Controllers.EventsController.My (Eventures.Web)" in 10150.5338ms (afa2e885)
+2018-12-20T15:06:26.4494396+02:00 0HLJ6FFIU00IO:00000003 [INF] Executed endpoint '"Eventures.Web.Controllers.EventsController.My (Eventures.Web)"' (99874f2b)
+2018-12-20T15:06:26.4539803+02:00 0HLJ6FFIU00IO:00000003 [INF] Request finished in 10251.1903ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-20T15:06:26.5342450+02:00 0HLJ6FFIU00IQ:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:57354/css/site.css   (ca22a1cb)
+2018-12-20T15:06:26.5412605+02:00 0HLJ6FFIU00IP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-12-20T15:06:26.5461968+02:00 0HLJ6FFIU00IO:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:57354/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-12-20T15:06:26.5723791+02:00 0HLJ6FFIU00IP:00000002 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2018-12-20T15:06:26.5752524+02:00 0HLJ6FFIU00IQ:00000004 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2018-12-20T15:06:26.6046161+02:00 0HLJ6FFIU00IP:00000002 [INF] Request finished in 42.9451ms 304 application/javascript (791a596a)
+2018-12-20T15:06:26.6086564+02:00 0HLJ6FFIU00IQ:00000004 [INF] Request finished in 49.7034ms 304 text/css (791a596a)
+2018-12-20T15:06:26.6239354+02:00 0HLJ6FFIU00IR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57354/js/site.js?v=qJ6sF6fAQn4m-8y39hiFs0CzFE8ldTJ8vZrFRoBAU5U   (ca22a1cb)
+2018-12-20T15:06:26.6335057+02:00 0HLJ6FFIU00IO:00000004 [INF] Connection id ""0HLJ6FFIU00IO"", Request id ""0HLJ6FFIU00IO:00000004"": the application aborted the connection. (9f49aef1)
+2018-12-20T15:06:26.6404281+02:00 0HLJ6FFIU00IR:00000002 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2018-12-20T15:06:26.6549070+02:00 0HLJ6FFIU00IO:00000004 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"F:\CSharp-MVC-Frameworks-ASP.NET-Core-SoftUni\03. Eventures Inc\Eventures.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-12-20T15:06:26.6591425+02:00 0HLJ6FFIU00IR:00000002 [INF] Request finished in 111.5349ms 304 application/javascript (791a596a)
+2018-12-20T15:06:26.6638931+02:00 0HLJ6FFIU00IO:00000004 [INF] Request finished in 122.983ms 0 text/css (791a596a)
+2018-12-20T15:06:31.5598363+02:00 0HLJ6FFIU00IQ:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:57354/events/my?pageNumber=2   (ca22a1cb)
+2018-12-20T15:06:31.5673934+02:00 0HLJ6FFIU00IQ:00000005 [INF] Executing endpoint '"Eventures.Web.Controllers.EventsController.My (Eventures.Web)"' (500cc934)
+2018-12-20T15:06:31.5704192+02:00 0HLJ6FFIU00IQ:00000005 [INF] Route matched with "{action = \"My\", controller = \"Events\", area = \"\", page = \"\"}". Executing action "Eventures.Web.Controllers.EventsController.My (Eventures.Web)" (a44c0341)
+2018-12-20T15:06:31.5731349+02:00 0HLJ6FFIU00IQ:00000005 [INF] Authorization was successful. (0d575a54)
+2018-12-20T15:06:31.6471481+02:00 0HLJ6FFIU00IQ:00000005 [INF] Executing action method "Eventures.Web.Controllers.EventsController.My (Eventures.Web)" with arguments (["2"]) - Validation state: Valid (4e3479ed)
+2018-12-20T15:06:31.6513914+02:00 0HLJ6FFIU00IQ:00000005 [INF] Entity Framework Core "2.2.0-rtm-35687" initialized '"EventuresDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-20T15:06:31.6960479+02:00 0HLJ6FFIU00IQ:00000005 [INF] Executed DbCommand ("35"ms) [Parameters=["@__userId_0='?' (Size = 450), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [o.Event].[Name] AS [EventName], [o].[Tickets]
+FROM [Orders] AS [o]
+INNER JOIN [Events] AS [o.Event] ON [o].[EventId] = [o.Event].[Id]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[OrderedOn] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-12-20T15:06:31.7357583+02:00 0HLJ6FFIU00IQ:00000005 [INF] Executed DbCommand ("36"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Orders] AS [o]
+WHERE [o].[UserId] = @__userId_0" (0723d8ff)
+2018-12-20T15:06:31.7389015+02:00 0HLJ6FFIU00IQ:00000005 [INF] Executed action method "Eventures.Web.Controllers.EventsController.My (Eventures.Web)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 89.0345ms. (50a9e262)
+2018-12-20T15:06:31.7419623+02:00 0HLJ6FFIU00IQ:00000005 [INF] Executing ViewResult, running view "My". (c83d0e25)
+2018-12-20T15:06:31.7479788+02:00 0HLJ6FFIU00IQ:00000005 [INF] Executed ViewResult - view "My" executed in 5.897ms. (f66409e9)
+2018-12-20T15:06:31.7519018+02:00 0HLJ6FFIU00IQ:00000005 [INF] Executed action "Eventures.Web.Controllers.EventsController.My (Eventures.Web)" in 177.7302ms (afa2e885)
+2018-12-20T15:06:31.7543463+02:00 0HLJ6FFIU00IQ:00000005 [INF] Executed endpoint '"Eventures.Web.Controllers.EventsController.My (Eventures.Web)"' (99874f2b)
+2018-12-20T15:06:31.7579916+02:00 0HLJ6FFIU00IQ:00000005 [INF] Request finished in 198.3153ms 200 text/html; charset=utf-8 (791a596a)
