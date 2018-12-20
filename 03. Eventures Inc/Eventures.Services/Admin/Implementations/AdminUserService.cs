@@ -16,6 +16,7 @@
             this.db = db;
         }
 
+        // Tested
         public async Task<IEnumerable<AdminUserListingServiceModel>> AllAsync()
             => await this.db
                 .Users
