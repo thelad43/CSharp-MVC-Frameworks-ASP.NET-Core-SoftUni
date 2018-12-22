@@ -1,11 +1,9 @@
 ﻿namespace Eventures.Tests.Services
 {
-    using AutoMapper;
-    using Eventures.Common.Mapping;
-    using Eventures.Data;
-    using Eventures.Models;
+    using Data;
     using Eventures.Services.Implementations;
     using Eventures.Services.Models.Events;
+    using Models;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -33,9 +31,7 @@
             this.dateTime = new DateTime(2018, 5, 5);
             this.startDate = new DateTime(2018, 3, 5);
             this.endDate = new DateTime(2018, 3, 8);
-
-            Mapper.Reset();
-            Mapper.Initialize(cfg => new AutomapperProfile());
+            Tests.Initialize();
         }
 
         [Fact]

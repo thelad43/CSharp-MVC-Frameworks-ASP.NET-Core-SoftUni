@@ -1,10 +1,8 @@
 ﻿namespace Eventures.Tests.Services
 {
-    using AutoMapper;
-    using Eventures.Common.Mapping;
-    using Eventures.Data;
-    using Eventures.Models;
+    using Data;
     using Eventures.Services.Implementations;
+    using Models;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -25,9 +23,7 @@
         public OrderServiceTests()
         {
             this.rnd = new Random();
-
-            Mapper.Reset();
-            Mapper.Initialize(cfg => new AutomapperProfile());
+            Tests.Initialize();
         }
 
         [Fact]

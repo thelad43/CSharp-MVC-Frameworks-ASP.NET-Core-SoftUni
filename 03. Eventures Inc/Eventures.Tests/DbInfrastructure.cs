@@ -1,6 +1,6 @@
 ﻿namespace Eventures.Tests
 {
-    using Eventures.Data;
+    using Data;
     using Microsoft.EntityFrameworkCore;
     using System;
 

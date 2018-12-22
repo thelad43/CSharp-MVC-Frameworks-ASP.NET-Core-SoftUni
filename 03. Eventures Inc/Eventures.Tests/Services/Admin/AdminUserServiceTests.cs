@@ -1,11 +1,9 @@
 ﻿namespace Eventures.Tests.Services.Admin
 {
-    using AutoMapper;
-    using Eventures.Common.Mapping;
-    using Eventures.Data;
-    using Eventures.Models;
+    using Data;
     using Eventures.Services.Admin.Implementations;
     using Eventures.Services.Admin.Models;
+    using Models;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
@@ -15,8 +13,7 @@
     {
         public AdminUserServiceTests()
         {
-            Mapper.Reset();
-            Mapper.Initialize(cfg => new AutomapperProfile());
+            Tests.Initialize();
         }
 
         [Fact]
