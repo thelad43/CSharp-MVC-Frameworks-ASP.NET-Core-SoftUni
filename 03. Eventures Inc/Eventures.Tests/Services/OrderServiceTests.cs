@@ -1,6 +1,5 @@
 ﻿namespace Eventures.Tests.Services
 {
-    using Data;
     using Eventures.Services.Implementations;
     using Models;
     using System;
@@ -29,7 +28,7 @@
         [Fact]
         public async Task AllAsyncShouldReturnOnly10Orders()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -75,7 +74,7 @@
         [Fact]
         public async Task AllAsyncShouldReturnOrdersOrderedByDescByOrderedDate()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -136,11 +135,11 @@
                 }
             }
         }
-        
+
         [Fact]
         public async Task CreateAsyncShouldCreateSuccessfullyOrderAndAddItToDb()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -183,7 +182,7 @@
         [Fact]
         public async Task CreateAsyncShouldNotCreateOrderIfUserIsNull()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -212,7 +211,7 @@
         [Fact]
         public async Task CreateAsyncShouldNotCreateOrderIfEventIsNull()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -241,7 +240,7 @@
         [Fact]
         public async Task CreateAsyncShouldNotCreateOrderIfTicketsCountIsZeroOrLess()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -282,7 +281,7 @@
         [Fact]
         public async Task CreateAsyncShouldDecreaseEventsTicketsByOrderTickets()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -321,7 +320,7 @@
         [Fact]
         public async Task MyAsyncShouldReturnOnlyOrdersCreatedByUser()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -389,7 +388,7 @@
         [Fact]
         public async Task TotalAsyncByUserIdShouldReturnCorrectCount()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -456,7 +455,7 @@
         [Fact]
         public async Task TotalAsyncShouldReturnCorrectCountOrders()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 

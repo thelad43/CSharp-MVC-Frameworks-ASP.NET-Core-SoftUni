@@ -1,6 +1,5 @@
 ﻿namespace Eventures.Tests.Services
 {
-    using Data;
     using Eventures.Services.Implementations;
     using Eventures.Services.Models.Events;
     using Models;
@@ -37,7 +36,7 @@
         [Fact]
         public async Task AllAsyncShouldReturn10EventsFromPage1()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -67,7 +66,7 @@
         [Fact]
         public async Task AllAsyncShouldReturnOnlyEventsThatHaveMoreThan1Ticket()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -97,7 +96,7 @@
         [Fact]
         public async Task AllAsyncShouldReturnEventsInDescendingOrderByStartDate()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -138,7 +137,7 @@
         [Fact]
         public async Task AllAsyncShouldReturnOnlyTheEventsLocatedAtTheGivenPage()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -173,7 +172,7 @@
         [Fact]
         public async Task ByIdAsyncShoulReturnCorrectEvent()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -204,7 +203,7 @@
         [Fact]
         public async Task CreateAsyncShouldCreateSuccessfullyEventAndAddItToDb()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -235,7 +234,7 @@
         [Fact]
         public async Task CreateAsyncShouldNotCreateEventIfNameIsNullOrWhiteSpace()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -256,7 +255,7 @@
         [Fact]
         public async Task CreateAsyncShouldNotCreateEventIfPlaceIsNullOrWhiteSpace()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -277,7 +276,7 @@
         [Fact]
         public async Task CreateAsyncShouldNotCreateEventIfTicketPriceIsZeroOrLess()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -294,7 +293,7 @@
         [Fact]
         public async Task CreateAsyncShouldNotCreateEventIfTicketsAreZeroOrLess()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 
@@ -311,7 +310,7 @@
         [Fact]
         public async Task TotalAsyncShouldReturnCorrectCount()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 var events = new EventService(db);
 

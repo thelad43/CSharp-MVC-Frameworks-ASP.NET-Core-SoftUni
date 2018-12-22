@@ -1,6 +1,5 @@
 ﻿namespace Eventures.Tests.Services.Admin
 {
-    using Data;
     using Eventures.Services.Admin.Implementations;
     using Eventures.Services.Admin.Models;
     using Models;
@@ -19,7 +18,7 @@
         [Fact]
         public async Task AllAsyncShouldReturnAllUsers()
         {
-            using (var db = new EventuresDbContext(DbInfrastructure.GetDbOptions()))
+            using (var db = DbInfrastructure.GetDatabase())
             {
                 for (var i = 0; i < 10; i++)
                 {

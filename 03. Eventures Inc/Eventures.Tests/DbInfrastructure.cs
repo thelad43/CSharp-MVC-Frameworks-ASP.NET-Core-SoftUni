@@ -6,11 +6,13 @@
 
     public static class DbInfrastructure
     {
-        public static DbContextOptions<EventuresDbContext> GetDbOptions()
+        public static EventuresDbContext GetDatabase()
         {
-            return new DbContextOptionsBuilder<EventuresDbContext>()
-               .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
-               .Options;
+            var dbOptions = new DbContextOptionsBuilder<EventuresDbContext>()
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
+                .Options;
+
+            return new EventuresDbContext(dbOptions);
         }
     }
 }
